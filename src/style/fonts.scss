@@ -1,23 +1,31 @@
 @font-face {
   font-family: "SegoeUi";
-  src: url('../fonts/SegoeUi/SegoeUi-Bold.ttf'),
-		   url('../fonts/SegoeUi/SegoeUi-Bold.eot'),
-		   url('../fonts/SegoeUi/SegoeUi-Bold.woff');
+  src: url('../fonts/SegoeUiBold/SegoeUi-Bold.ttf'),
+		   url('../fonts/SegoeUiBold/SegoeUi-Bold.eot'),
+		   url('../fonts/SegoeUiBold/SegoeUi-Bold.woff');
 	font-weight: 700;
 }
 
 @font-face {
   font-family: "SegoeUi";
-  src: url('../fonts/SegoeUi/SegoeUi.ttf'),
-		   url('../fonts/SegoeUi/SegoeUi.eot'),
-		   url('../fonts/SegoeUi/SegoeUi.woff');
+  src: url('../fonts/SegoeUiRegular/SegoeUi.ttf'),
+		   url('../fonts/SegoeUiRegular/SegoeUi.eot'),
+		   url('../fonts/SegoeUiRegular/SegoeUi.woff');
 	font-weight: normal;
 }
 
 @font-face {
   font-family: "SegoeUi";
-  src: url('../fonts/SegoeUi/SegoeUi-Light.ttf'),
-		   url('../fonts/SegoeUi/SegoeUi-Light.eot'),
-		   url('../fonts/SegoeUi/SegoeUi-Light.woff');
+  src: url('../fonts/SegoeUiLight/SegoeUi-Light.ttf'),
+		   url('../fonts/SegoeUiLight/SegoeUi-Light.eot'),
+		   url('../fonts/SegoeUiLight/SegoeUi-Light.woff');
 	font-weight: 300;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf'),
+		   url('../fonts/SourceSansPro/SourceSansPro-Regular.eot'),
+		   url('../fonts/SourceSansPro/SourceSansPro-Regular.woff');
+	font-weight: normal;
 }

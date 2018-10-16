@@ -1,0 +1,11 @@
+.triangle {
+  border-style: solid;
+  &_up {
+    border-width: 0 10px 11px 10px;
+    border-color: transparent transparent $green transparent;
+  }
+  &_down {
+    border-width: 11px 10px 0 10px;
+    border-color: $dark-red transparent transparent transparent;
+  }
+}

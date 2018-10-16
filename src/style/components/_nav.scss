@@ -2,15 +2,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: rem(40);
+  padding-top: rem(110);
   &_desktop {
     @media (max-width: 768px) {
       display: none;
     }
-  }
-  &_padding-top {
-    padding-top: rem(38);
-    padding-bottom: 0;
   }
   &_direction-column {
     flex-direction: column;
@@ -32,7 +28,7 @@
 
 .nav__item {
   &:not(:last-child) {
-    margin-right: rem(54);
+    margin-right: rem(162);
   }
   &_relative {
     position: relative;
@@ -41,14 +37,20 @@
 
 .nav__link {
   display: block;
-  color: $gray;
-  font-size: rem(20);
-  font-family: $main-font;
-  transition: color 250ms;
+  color: #fff;
+  font-size: rem(22);
+  font: {
+    size: rem(22);
+    weight: 300;
+  }
+  transition: all 250ms;
+  padding-bottom: rem(11);
+  border-bottom: 4px solid transparent;
   &:hover, &:focus {
-    color: darken($gray, 20%);
+    color: $blue;
   }
   &_active {
-    font-weight: 700;
+    color: $blue;
+    border-bottom-color: $blue;
   }
 }

@@ -97,15 +97,15 @@ select, input {
     size: rem(15);
     weight: 400;
   }
-  color: $blue;
+  color: $link-blue;
   // margin-right: rem(14);
   transition: color 250ms;
   cursor: pointer;
   &:hover, &:focus {
-    color: darken($blue, 20%);
+    color: darken($link-blue, 20%);
   }
-  &_font-size-14 {
-    font-size: rem(14);
+  &_font-size-10 {
+    font-size: rem(10);
   }
 }
 

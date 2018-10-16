@@ -1,6 +1,7 @@
 .wallet-form {
   top: rem(30);
   right: rem(-13);
+  text-align: center;
   .form__input {
     padding-bottom: 0.6rem;
   }
@@ -12,7 +13,7 @@
 }
 
 .wallet-form__actions {
-  margin-bottom: rem(60);
+  margin-bottom: rem(25);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,12 +21,16 @@
   padding-right: rem(21);
 }
 
-.wallet-form__forgot-link {
+.wallet-form__link {
   font: {
     family: $roboto;
-    size: rem(13);
+    size: rem(10);
   }
+  color: $link-blue;
   &:hover, &:focus {
     color: darken($link-blue, 20%);
+  }
+  &_font-size-14 {
+    font-size: rem(14);
   }
 }

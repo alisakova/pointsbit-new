@@ -1,0 +1,11 @@
+.exchange-button {
+  background: $blue;
+  border-radius: rem(18);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+  padding: rem(4 15 5);
+  font: {
+    size: rem(20);
+    weight: 700;
+  }
+  color: #fff;
+}

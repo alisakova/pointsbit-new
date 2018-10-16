@@ -1,61 +1,20 @@
 .footer {
   flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: rem(0 74 50 38);
-  &_justify-flex-start {
-    justify-content: flex-start;
-    padding: {
-      right: rem(73);
-      left: rem(13);
-      bottom: rem(10);
-    }
-    @media (max-width: 700px) {
-      flex-direction: column;
-      align-items: flex-end;
-      padding: {
-        left: rem(13);
-        right: rem(13);
-        bottom: rem(20);
-      }
-    }
-  }
-  &_relative {
-    position: relative;
-    z-index: 5;
-  }
-  @media (max-width: 900px) {
-    padding-top: rem(20);
-  }
-  @media (max-width: 540px) {
-    padding: {
-      left: 1.5625rem;
-      right: 1.5625rem;
-    }
-  }
+  position: relative;
+  background: url('../img/footer-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: rem(440 30 40);
 }
 
 .footer__rights {
-  font: {
-    size: rem(13);
-    weight: 300;
-  }
-  color: $gray;
+  font-size: rem(15);
+  color: #fff;
   line-height: 1.2;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.53px;
+  line-height: 1.3;
   text-align: center;
-  margin: {
-    top: rem(16);
-    right: rem(13);
-  }
-  @media (max-width: 700px) {
-    margin-bottom: rem(20);
-  }
 }
 
-.footer__counters {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+.footer__link {
+  color: $purple;
 }

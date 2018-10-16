@@ -1,15 +1,21 @@
+$action-btn-bg: #283a52;
+
 .action-button {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  background-color: $alt-blue;
+  border: 1px solid $dark-blue;
+  background-color: $action-btn-bg;
   color: #fff;
   font: {
-    size: rem(15);
+    size: rem(12);
     weight: 400;
+    family: $source-sans-pro;
   }
   padding: rem(15 60 16);
   transition: box-shadow 250ms;
   &:hover, &:focus {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
+  }
+  &_font-size-15 {
+    font-size: rem(15);
   }
 }

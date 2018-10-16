@@ -1,0 +1,14 @@
+.up-button {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2f4c6f 0%, #1e6f9b 38%, #00acea 100%);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  right: rem(141);
+  top: rem(30);
+  width: rem(82);
+  height: rem(82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

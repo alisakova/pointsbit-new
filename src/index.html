@@ -15,19 +15,27 @@
 </head>
 
 <body>
-	<div class="wrapper background-layout">
-		@import "index/big-header.html"
+	<div class="wrapper">
 		@import "index/menu.html"
-		<div class="content index">
-			<main class="first-slide">
-				<div class="first-slide__content">
+		<div class="content">
+			<main>
+				<div class="background-blue">
+					@import "index/big-header.html"
 					@import "index/first-slide.html"
 				</div>
+				@import "index/why-pointsbit.html"
+				@import "index/currency-selection.html"
 			</main>
 		</div>
 		@import "footer.html"
 	</div>
 
 	<script src="js/main.min.js"></script>
+	<script>
+	pixelperfect.init( {
+	image: "img/web.png",
+	opacity: .4
+} );
+	</script>
 </body>
 </html>

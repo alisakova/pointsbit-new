@@ -1,0 +1,22 @@
+.scroll-btn {
+  background: url('../img/to-bottom.svg') no-repeat center center;
+  width: rem(30);
+  height: rem(77);
+  position: absolute;
+  left: 50%;
+  bottom: rem(180);
+  transform: translateX(-50%);
+  animation: mouse-icon-move 2s infinite;
+}
+
+@keyframes mouse-icon-move {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 15px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

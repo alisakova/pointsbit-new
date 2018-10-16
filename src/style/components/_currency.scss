@@ -1,0 +1,59 @@
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 700;
+  flex: 0 0 31%;
+  text-align: left;
+  &:not(:last-child) {
+    margin-right: rem(77);
+  }
+}
+
+.currency__img {
+  margin-right: rem(19);
+  width: rem(86);
+  height: rem(86);
+}
+
+.currency__name {
+  color: $gray-200;
+  margin-bottom: rem(20);
+}
+
+.currency__row {
+  color: $gray-400;
+  &:not(:last-child) {
+    margin-bottom: rem(17);
+  }
+}
+
+.currency__change {
+  align-self: flex-end;
+  margin-bottom: rem(10);
+  display: flex;
+  align-items: center;
+}
+
+.currency__growth {
+  font-size: rem(33);
+  margin-right: rem(25);
+  &_up {
+    color: $green;
+  }
+  &_down {
+    color: $dark-red;
+  }
+}
+
+.currency__amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 rem(28) 0 rem(-11);
+}
+
+.currency__col {
+  flex: 0 0 50%;
+  padding: 0 rem(11);
+}

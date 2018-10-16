@@ -13,7 +13,10 @@ $checkbox-border: #808495;
     }
   }
   &_small {
-    padding-left: rem(28);
+    padding: {
+      left: rem(28);
+      top: 1px;
+    }
   }
   &_medium {
     padding-left: rem(56);

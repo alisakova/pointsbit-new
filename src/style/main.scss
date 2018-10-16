@@ -20,7 +20,7 @@ body {
   margin: 0;
   font: inherit;
   font-size: 100%;
-  background: none;
+  background: #f9f9f9;
   color: $black;
   -webkit-text-size-adjust: none;
 }
@@ -62,20 +62,10 @@ button {
   margin: 0 auto;
 }
 
-h1 {
-  font: {
-    size: rem(70);
-    family: $main-font;
-    weight: 300;
-  }
-  color: $blue;
-  line-height: 1.2;
-  margin: 0;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
   // height: 100%;
 }
 
@@ -128,14 +118,30 @@ h1 {
   padding: rem(50 30);
 }
 
+.background-blue {
+  background: url('../img/first-bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+h1 {
+  font: {
+    size: rem(70);
+    family: $main-font;
+    weight: 300;
+  }
+  color: $blue;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+}
+
 h2 {
   font: {
-    size: rem(26);
-    family: $roboto;
-    weight: 400;
+    size: rem(60);
+    weight: 300;
   }
   margin: 0;
-  color: $block-color;
+  color: $gray-300;
 }
 
 p {
@@ -143,11 +149,8 @@ p {
   text-align: left;
   margin: 0;
   font: {
-    size: rem(22);
-    family: $roboto;
-  }
-  @media (max-width: 540px) {
-    font-size: rem(16);
+    size: rem(25);
+    weight: 300;
   }
 }
 
@@ -199,7 +202,6 @@ img {
 @import "components/big-header";
 @import "components/footer";
 @import "components/accordion";
-@import "components/pages";
 @import "components/grid";
 @import "components/form";
 @import "components/wallet-form";
@@ -208,7 +210,6 @@ img {
 @import "components/tabs";
 @import "components/get-wallet";
 @import "components/popup-block";
-@import "components/pages-counter";
 @import "components/background-layout";
 @import "components/contact-container";
 @import "components/contact-form";
@@ -235,3 +236,9 @@ img {
 @import "components/user-docs";
 @import "components/address-data";
 @import "components/wallet-form-mobile";
+@import "components/typical-block";
+@import "components/currency";
+@import "components/triangle";
+@import "components/exchange-button";
+@import "components/up-button";
+@import "components/scroll-btn";
