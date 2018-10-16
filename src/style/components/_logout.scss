@@ -1,0 +1,27 @@
+.logout-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: rem(30);
+}
+
+.logout {
+  background: $dashboard-blue;
+  color: #fff;
+  font: {
+    size: rem(26);
+    family: $roboto;
+    weight: 400;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(12 29 11 30);
+  width: rem(517);
+}
+
+.logout__icon {
+  background: url('../img/logout-icon.svg') no-repeat center center;
+  background-size: contain;
+  width: rem(37);
+  height: rem(37);
+}

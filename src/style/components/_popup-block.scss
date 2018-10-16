@@ -1,0 +1,40 @@
+.popup-block {
+  background: #fff;
+  border-radius: rem(40);
+  border: 1px solid $gray;
+  padding: rem(28 16 28);
+  width: rem(372);
+  position: absolute;
+  z-index: 100;
+  display: none;
+  &.active {
+    display: block;
+  }
+  &.get-wallet {
+    padding: {
+      bottom: rem(95);
+      top: rem(34);
+    }
+  }
+}
+
+.popup-block__title {
+  font: {
+    size: rem(27);
+    weight: 300;
+    family: $segoe-light;
+  }
+  color: #43425d;
+  margin-bottom: rem(46);
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+.popup-block__button {
+  display: flex;
+  justify-content: center;
+  &_margin-bottom {
+    margin-bottom: rem(66);
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<header class="mobile-header">
+		<button class="burger _open-menu"></button>
+	</header>
+	@import "menu.html"
+	<main class="mobile-wrapper">
+		<div class="wallet-form wallet-form-mobile">
+	    <div class="wallet-form-mobile__title">
+	      Wallet
+	    </div>
+	    <form action="" class="form">
+	      <div class="form__item">
+	        <input type="email" placeholder="Email" class="form__input">
+	      </div>
+	      <div class="form__item">
+	        <input type="password" placeholder="Password" class="form__input">
+	      </div>
+	      <div class="wallet-form__actions">
+	        <label for="remember" class="form__label form__label_font-size-14 checkbox">
+	          Remember me
+	          <input id="remember" type="checkbox">
+	          <span class="checkbox__checkmark"></span>
+	        </label>
+	        <a href="#" class="wallet-form__forgot-link">Forgot password</a>
+	      </div>
+	      <div class="wallet-form-mobile__button">
+	        <a href="dashboard.html" class="action-button">
+	          Login
+	        </a>
+	      </div>
+	    </form>
+	  </div>
+	</main>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

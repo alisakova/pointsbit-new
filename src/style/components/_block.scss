@@ -1,0 +1,257 @@
+.block {
+  background: #fff;
+  width: calc(100% - 0.9375rem);
+  font-family: $roboto;
+  margin-bottom: rem(30);
+  &:first-child {
+    @media (min-width: 1080px) {
+      margin-right: rem(15);
+    }
+  }
+  &:last-child {
+    @media (min-width: 1080px) {
+      margin-left: rem(15);
+    }
+  }
+  @media (max-width: 1080px) {
+    width: 100%;
+  }
+  &_big {
+    flex-grow: 1;
+  }
+  &_small {
+    max-width: rem(364);
+    @media (max-width: 1080px) {
+      max-width: none;
+    }
+    .block__header {
+      @media (min-width: 1501px) and (max-width: 1700px) {
+        padding-right: rem(10);
+      }
+    }
+  }
+  &_box-shadow {
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(13, 13, 13, 0.12);
+  }
+  &_alt {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: rem(1120);
+    border-radius: 7px;
+  }
+}
+
+.block__header {
+  border-bottom: 1px solid #e0e3da;
+  padding: rem(27 30 30 28);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    bottom: 0;
+    left: 0;
+  }
+  &_big-padding-right {
+    padding-right: rem(100);
+    @media (max-width: 475px) {
+      padding-right: rem(30);
+    }
+  }
+  &_exchange {
+    padding-right: rem(152);
+    @media (max-width: 1080px) {
+      padding-right: rem(100);
+    }
+    @media (max-width: 475px) {
+      padding-right: rem(30);
+    }
+  }
+}
+
+.block__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &_alt {
+    font: {
+      size: rem(28);
+      weight: 400;
+    }
+    margin-bottom: rem(79);
+    color: $block-color;
+  }
+  &_violet {
+    color: $violet;
+    font-family: $main-font;
+  }
+  &_margins {
+    margin: {
+      left: rem(10);
+      bottom: rem(50);
+    }
+    font-size: rem(24);
+    line-height: 21px;
+  }
+}
+
+.block__actions {
+  color: $block-color;
+  font: {
+    size: rem(18);
+    weight: 300;
+  }
+}
+
+.block__action-btn {
+  font: {
+    size: rem(18);
+    weight: 300;
+  }
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 250ms;
+  &_active {
+    font-weight: 400;
+    border-bottom-color: $dashboard-blue;
+  }
+  &:not(:last-child) {
+    margin-right: rem(30);
+  }
+}
+
+.block__body {
+  padding: rem(37 30 50);
+  &_flex {
+    padding: {
+      top: rem(16);
+      left: rem(10);
+    }
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      padding: rem(16 10 50);
+    }
+  }
+  &_padding-top-0 {
+    padding-top: 0;
+  }
+  &_without-header {
+    padding: rem(22 38 78 29);
+  }
+  &_alt-padding {
+    padding: rem(18 54 10 0);
+    @media (max-width: 600px) {
+      padding-right: rem(30);
+    }
+  }
+  &_wallet-balance {
+    padding: rem(45 38 10 56);
+    @media (min-width: 1501px) and (max-width: 1700px) {
+      padding: {
+        left: rem(20);
+        right: rem(20);
+      }
+    }
+  }
+}
+
+.block__add-btn {
+  font: {
+    size: rem(12);
+    weight: 400;
+  }
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+}
+
+.block__reload-btn {
+  font: {
+    size: rem(18);
+    weight: 400;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.block__btn-icon {
+  margin-right: rem(10);
+}
+
+.block__form {
+  position: relative;
+  margin: {
+    top: rem(30);
+    right: rem(95);
+  }
+  display: none;
+  &.active {
+    display: block;
+  }
+  @media (max-width: 475px) {
+    margin: rem(30) auto rem(115);
+  }
+  @media (max-width: 375px) {
+    margin-left: 0;
+  }
+}
+
+.block__two-col {
+  display: flex;
+  @media (max-width: 900px) {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 35rem;
+    width: 100%;
+  }
+  @media (max-width: 475px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.block__datas {
+  margin: {
+    right: rem(48);
+    top: rem(2);
+  }
+  @media (max-width: 900px) {
+    margin-right: 0;
+  }
+  @media (max-width: 475px) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.block__exchange-form {
+  margin-top: rem(56);
+  max-width: rem(507);
+  flex-grow: 1;
+  @media (max-width: 900px) {
+    margin: 7.5rem auto 0;
+    width: 100%;
+  }
+  @media (max-width: 475px) {
+    margin-top: 0;
+  }
+}
+
+.block__table {
+  overflow-x: auto;
+}

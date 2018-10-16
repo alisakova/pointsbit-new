@@ -1,0 +1,32 @@
+.menu {
+  min-height: 100vh;
+  width: 100%;
+  padding: rem(40 30 30);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: -1;
+  transition: all 0.5s;
+  overflow-x: hidden;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+}
+
+.menu__close {
+  width: rem(30);
+  height: rem(30);
+  background: url('../img/close.svg') no-repeat center center;
+  background-size: cover;
+  display: block;
+  margin: {
+    left: auto;
+    bottom: rem(15);
+  }
+}

@@ -1,0 +1,37 @@
+$nav-link-color: #576271;
+
+.aside-nav {
+  padding-top: rem(160);
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.aside-nav__item {
+  font: {
+    size: rem(24);
+    family: $roboto;
+    weight: 300;
+  }
+  color: $nav-link-color;
+}
+
+.aside-nav__link {
+  display: block;
+  padding: rem(14 15 14 68);
+  position: relative;
+  &:hover {
+    color: darken($nav-link-color, 30%);
+  }
+  &_active {
+    &:after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: rem(10);
+      background: $dashboard-blue;
+      left: 0;
+      top: 0;
+    }
+  }
+}

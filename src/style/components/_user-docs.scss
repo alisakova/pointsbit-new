@@ -1,0 +1,130 @@
+.user-docs {
+  border: 1px solid #707070;
+  padding: rem(17 72 27 41);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: rem(18);
+  }
+  @media (max-width: 600px) {
+    padding: {
+      left: rem(15);
+      right: rem(15);
+    }
+  }
+  @media (max-width: 540px) {
+    flex-wrap: wrap;
+  }
+}
+
+.user-docs__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  &:first-child {
+    max-width: 43%;
+    @media (max-width: 990px) {
+      max-width: 60%;
+    }
+    @media (max-width: 540px) {
+      max-width: 50%;
+    }
+  }
+  &:last-child {
+    max-width: 36.2%;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      justify-content: flex-start;
+    }
+  }
+  @media (max-width: 540px) {
+    &:last-child,
+    &:first-child {
+      width: 100%;
+      max-width: none;
+      justify-content: flex-start;
+    }
+    &:first-child {
+      margin-bottom: rem(15);
+    }
+  }
+}
+
+.user-docs__user {
+  font: {
+    size: rem(15);
+  }
+  color: #0f0a30;
+  margin: {
+    top: rem(7);
+    right: rem(30);
+  }
+  @media (max-width: 540px) {
+    margin: {
+      top: 0;
+      right: 0;
+      bottom: rem(20);
+    }
+  }
+}
+
+.user-docs__row {
+  font-size: rem(13);
+  color: #767791;
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: rem(11);
+    @media (max-width: 540px) {
+      margin-bottom: rem(20);
+    }
+  }
+  @media (max-width: 540px) {
+    flex-wrap: wrap;
+  }
+}
+
+.user-docs__section {
+  width: 100%;
+}
+
+.user-docs__doc-name {
+  width: 46%;
+  @media (max-width: 540px) {
+    width: auto;
+    min-width: rem(117);
+    margin-right: rem(20);
+  }
+}
+
+.user-docs__button {
+  border-radius: rem(15);
+  background-color: $violet;
+  color: #fff;
+  font-size: rem(12);
+  line-height: 1.2;
+  padding: rem(3 43);
+  transition: background-color 250ms;
+  &:hover, &:focus {
+    background-color: darken($violet, 7%);
+  }
+  @media (max-width: 600px) {
+    margin-right: rem(20);
+  }
+}
+
+.user-docs__status {
+  font-size: rem(13);
+  width: 20%;
+  &_confirm {
+    color: $violet;
+  }
+  &_confirmed {
+    color: $confirmed-green;
+  }
+  @media (max-width: 600px) {
+    width: auto;
+  }
+}

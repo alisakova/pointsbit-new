@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  color: $block-color;
+  font: {
+    size: rem(20);
+    weight: 400;
+  }
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table__th {
+  font-weight: 400;
+  border-bottom: 1px solid $border-color;
+  padding: rem(33 10 16);
+}
+
+.table__td {
+  border-bottom: 1px solid $border-color;
+  padding: rem(33 10 16);
+}
+
+.table__status {
+  &_waiting {
+    padding-bottom: rem(3);
+    border-bottom: 4px solid $red;
+  }
+}

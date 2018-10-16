@@ -1,0 +1,52 @@
+$indicator-bg: #c2d7e8;
+$indicator-active-bg: #69c113;
+$data-color: #6a829a;
+$data-active-color: #0f9af8;
+
+.data {
+  &:not(:last-child) {
+    margin-bottom: rem(8);
+    @media (max-width: 475px) {
+      margin-bottom: 0;
+      margin-right: rem(30);
+    }
+  }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    min-width: rem(90);
+  }
+  @media (max-width: 475px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.data__indicator {
+  width: rem(60);
+  height: rem(12);
+  background-color: $indicator-bg;
+  opacity: 0.66;
+  border-radius: 3px;
+  margin-bottom: rem(6);
+  transition: all 250ms;
+  &_active {
+    background-color: $indicator-active-bg;
+    height: rem(18);
+    width: rem(65);
+    margin-left: rem(-6);
+  }
+}
+
+.data__name {
+  font: {
+    size: rem(16);
+    weight: 400;
+  }
+  text-align: left;
+  color: $data-color;
+  transition: all 250ms;
+  &_active {
+    font-size: rem(18);
+    color: $data-active-color;
+  }
+}

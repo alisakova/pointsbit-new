@@ -1,0 +1,30 @@
+$dashboard-bg: #f7f9fb;
+
+.dashboard {
+  width: 100%;
+  flex-grow: 1;
+  background-color: $dashboard-bg;
+  padding: rem(30 30 30 28);
+  padding-left: rem(18);
+  &.transactions {
+    padding-left: rem(10);
+    @media (max-width: 768px) {
+      padding-right: rem(10);
+    }
+  }
+  @media (max-width: 540px) {
+    padding: {
+      left: rem(15);
+      right: rem(15);
+    }
+  }
+}
+
+.dashboard__block-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  @media (max-width: 1080px) {
+    flex-wrap: wrap;
+  }
+}

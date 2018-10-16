@@ -1,0 +1,40 @@
+.address-data {
+  max-width: rem(287);
+  min-width: rem(287);
+  width: 100%;
+  margin-left: rem(39);
+  margin-top: 0;
+  @media (max-width: 900px) {
+    margin-left: 0;
+    &.block__form {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 475px) {
+    &.block__form {
+      margin: rem(30) auto rem(40);
+    }
+  }
+}
+
+.address-data__item {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.address-data__input {
+  width: 100%;
+  font: {
+    size: rem(15);
+    family: $roboto;
+    weight: 400;
+  }
+  color: #43425d;
+  border-bottom: 2px solid #5ae2ff;
+  padding: rem(5 5 12 5);
+  @include input-placeholder {
+    color: #43425d;
+  }
+}

@@ -1,0 +1,48 @@
+.button {
+  text-align: center;
+  display: block;
+  background: $bright-blue;
+  padding: rem(19 76 22);
+  min-width: rem(273);
+  font-size: rem(24);
+  color: #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: rem(37);
+  transition: box-shadow 250ms;
+  line-height: 1.2;
+  &:hover, &:focus {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  &_margin-bottom-30 {
+    margin-bottom: rem(30);
+  }
+  &_margin-right-45 {
+    margin-right: rem(-45);
+    @media (max-width: 1080px) {
+      margin-right: 0;
+    }
+  }
+  &_margin-left-81 {
+    margin-left: rem(81);
+    @media (max-width: 900px) {
+      margin: 0 auto rem(23);
+    }
+  }
+  &_margin-bottom-23 {
+    margin-bottom: rem(23);
+  }
+  &_font-size-34 {
+    font: {
+      size: rem(34);
+      weight: 500;
+    }
+    padding: rem(16 62 17);
+  }
+  &_send {
+    padding: rem(24 106);
+    font: {
+      size: rem(18);
+      weight: 700;
+    }
+  }
+ }

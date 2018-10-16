@@ -1,0 +1,20 @@
+.pages-counter {
+  margin: {
+    top: rem(24);
+    right: rem(84);
+  }
+}
+
+.pages-counter__line {
+  display: block;
+  background: $black;
+  height: 1px;
+  width: rem(82);
+  margin-left: auto;
+  &_active {
+    width: rem(136);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(9);
+  }
+}

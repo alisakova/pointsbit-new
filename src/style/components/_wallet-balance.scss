@@ -1,0 +1,66 @@
+.wallet-balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 7px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: rem(10 10 5 17);
+  color: $block-color;
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+  &_margin-left {
+    margin-left: rem(27);
+  }
+  &_big-padding-bottom {
+    padding-bottom: rem(32);
+  }
+  @media (max-width: 1080px) {
+    max-width: rem(400);
+    margin: 0 auto rem(20);
+  }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    max-width: rem(200);
+    margin: 0 auto rem(20);
+  }
+}
+
+.wallet-balance__title {
+  font: {
+    size: rem(20);
+    weight: 400;
+    family: $main-font;
+  }
+  margin-bottom: rem(10);
+}
+
+.wallet-balance__amount {
+  font: {
+    size: rem(30);
+    weight: 400;
+    family: $main-font;
+  }
+  margin-bottom: rem(2);
+  text-transform: uppercase;
+  &_margin-bottom-0 {
+    margin-bottom: 0;
+  }
+  @media (max-width: 1700px) {
+    font-size: rem(22);
+  }
+}
+
+.wallet-balance__btn {
+  font: {
+    size: rem(11);
+    weight: 700;
+    family: 'Source Sans Pro', sans-serif;
+  }
+  background-color: $block-color;
+  opacity: 0.54;
+  padding: rem(5 20);
+  color: #fff;
+  border-radius: rem(15);
+  align-self: flex-end;
+}

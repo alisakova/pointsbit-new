@@ -1,0 +1,173 @@
+.select-container {
+  .select2-container--default {
+    .select2-selection--single {
+      border: none;
+      border-bottom: 2px solid $light-gray;
+      border-radius: 0;
+      padding: rem(0 30 10 8);
+      background: transparent;
+      .select2-selection__arrow  {
+        top: -1px;
+        height: 100%;
+        b {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .select2-container {
+    min-width: rem(120);
+    max-width: 100%;
+  }
+  .select2-container .select2-selection--single {
+    height: auto;
+    .select2-selection__rendered {
+      line-height: 1.2;
+      padding-left: 0;
+    }
+  }
+  &_violet-arrow {
+    .select2-container--default {
+      .select2-selection--single {
+        .select2-selection__arrow {
+          width: rem(22);
+          b {
+            left: -6px;
+            margin-left: 0;
+            border-width: rem(11) rem(10) 0 rem(10);
+            border-color: $purple transparent transparent transparent;
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-width: 0 rem(10) rem(11) rem(10);
+        border-color: transparent transparent $purple transparent;
+      }
+    }
+  }
+  &_green-arrow {
+    width: rem(170);
+    .select2-container {
+      min-width: rem(140);
+    }
+    .select2-container--default {
+      .select2-selection--single {
+        border: none;
+        padding-right: rem(48);
+        padding-left: 0;
+        .select2-selection__rendered {
+          color: $green;
+          font: {
+            size: rem(50);
+            weight: 400;
+          }
+          padding: 0;
+          @media (max-width: 475px) {
+            font-size: rem(40);
+          }
+        }
+        .select2-selection__arrow {
+          width: rem(36);
+          b {
+            left: 0;
+            margin-left: 0;
+            margin-top: 0;
+            border-width: rem(24) rem(18) 0 rem(18);
+            border-color: $green transparent transparent transparent;
+            @media (max-width: 475px) {
+              border-width: rem(20) rem(15) 0 rem(15);
+            }
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-width: 0 rem(18) rem(24) rem(18);
+        border-color: transparent transparent $green transparent;
+        @media (max-width: 475px) {
+          border-width: 0 rem(15) rem(20) rem(15);
+        }
+      }
+    }
+  }
+
+  &_gray-arrow {
+    width: rem(80);
+    .select2-container {
+      min-width: rem(80);
+    }
+    .select2-container--default {
+      .select2-selection--single {
+        border: none;
+        padding: {
+          right: rem(25);
+          left: 0;
+          bottom: 0;
+        }
+        .select2-selection__rendered {
+          font: {
+            size: rem(26);
+            family: $roboto;
+            weight: 400;
+          }
+          color: $block-color;
+          padding: 0;
+        }
+        .select2-selection__arrow {
+          width: rem(20);
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+          b {
+            left: 0;
+            margin-left: 0;
+            margin-top: 0;
+            border-width: rem(11) rem(10) 0 rem(10);
+            border-color: $block-color transparent transparent transparent;
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-width: 0 rem(10) rem(11) rem(10);
+        border-color: transparent transparent $block-color transparent;
+      }
+    }
+  }
+  &_light-gray-arrow {
+    .select2-container--default {
+      .select2-selection--single {
+        .select2-selection__rendered {
+          color: #828a95;
+          font: {
+            family: $main-font;
+          }
+        }
+        .select2-selection__arrow {
+          right: rem(12);
+          b {
+            border-color: #828a95 transparent transparent transparent;
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-color: transparent transparent #828a95 transparent;
+      }
+    }
+  }
+}
+
+.select-container_margin-left {
+  margin-left: rem(18);
+}

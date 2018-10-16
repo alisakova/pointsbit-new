@@ -1,0 +1,41 @@
+.document {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: $roboto;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: rem(24);
+  &:not(:first-child) {
+    padding-top: rem(19);
+  }
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
+}
+
+.document__title {
+  font: {
+    size: rem(18);
+    weight: 500;
+  }
+  max-width: 30%;
+  min-width: 30%;
+  // margin-right: rem(148);
+  @media (max-width: 475px) {
+    margin-bottom: rem(15);
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+.document__progress {
+  margin-right: rem(60);
+  flex-grow: 1;
+  @media (max-width: 475px) {
+    margin-right: 0;
+  }
+}
+
+.document__button {
+  margin-top: rem(10);
+}

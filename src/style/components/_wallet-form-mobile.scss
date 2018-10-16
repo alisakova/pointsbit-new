@@ -1,0 +1,23 @@
+.wallet-form-mobile {
+  max-width: rem(300);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wallet-form-mobile__title {
+  font: {
+    size: rem(27);
+    weight: 300;
+    family: $segoe-light;
+  }
+  color: #43425d;
+  margin-bottom: rem(46);
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+.wallet-form-mobile__button {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+.border-button {
+  font: {
+    size: rem(12);
+    weight: 400;
+    family: $roboto;
+  }
+  border: 2px solid $red;
+  padding: rem(5 10 7);
+  min-width: rem(100);
+}

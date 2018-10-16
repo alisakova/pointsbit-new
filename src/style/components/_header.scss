@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(27 89 65 18);
+  height: rem(159);
+  @media (max-width: 768px) {
+    padding: {
+      right: rem(30);
+      bottom: rem(30);
+    }
+  }
+}
+
+.header__logo {
+  max-width: rem(183);
+}

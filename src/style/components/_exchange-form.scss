@@ -1,0 +1,13 @@
+.exchange-form {
+  width: 100%;
+  padding-left: rem(33);
+  @media (max-width: 1080px) {
+    padding-left: 0;
+  }
+}
+
+.exchange-form__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

@@ -1,0 +1,29 @@
+.big-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(79 108 133 38);
+  &_padding {
+    padding: rem(79 108 20 38);
+  }
+  &_padding-bottom-36 {
+    padding-bottom: rem(36);
+  }
+  @media (max-width: 800px) {
+    padding: rem(50 50 50 38);
+  }
+  @media (max-width: 540px) {
+    height: 7rem;
+    padding: {
+      left: rem(25);
+      right: rem(25);
+    }
+  }
+}
+
+.big-header__logo {
+  max-width: rem(389);
+  @media (max-width: 540px) {
+    max-width: rem(220);
+  }
+}
