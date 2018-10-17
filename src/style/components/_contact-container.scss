@@ -1,8 +1,10 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: rem(50);
+  max-width: rem(1408);
+  padding-top: rem(10);
   @media (max-width: 998px) {
     flex-direction: column;
     align-items: center;

@@ -4,6 +4,12 @@
   background: url('../img/footer-bg.jpg') no-repeat center center;
   background-size: cover;
   padding: rem(440 30 40);
+  &_alt-bg {
+    padding-top: rem(400);
+    margin-top: rem(-185);
+    z-index: 1;
+    background-image: url('../img/footer-alt-bg.png');
+  }
 }
 
 .footer__rights {

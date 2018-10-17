@@ -1,6 +1,6 @@
 .wallet-form {
-  top: rem(30);
-  right: rem(-13);
+  top: calc(100% - 18px);
+  left: rem(-45);
   text-align: center;
   .form__input {
     padding-bottom: 0.6rem;
@@ -9,6 +9,10 @@
     &:nth-child(2) {
       margin-bottom: rem(43);
     }
+  }
+  @media (max-width: 1440px) {
+    left: auto;
+    right: rem(-22);
   }
 }
 

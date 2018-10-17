@@ -1,14 +1,26 @@
 .big-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: rem(39 50 0 44);
+  padding-top: rem(39);
   margin-bottom: rem(255);
+  &_with-bg {
+    background: url('../img/big-header-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: rem(135);
+    margin-bottom: rem(10);
+  }
 }
 
 .big-header__logo {
   max-width: rem(389);
+  height: rem(110);
+  margin-left: rem(44);
+  display: inline-block;
   @media (max-width: 540px) {
     max-width: rem(220);
+  }
+}
+
+.big-header__row {
+  &:nth-child(2) {
+    margin-top: rem(-8);
   }
 }

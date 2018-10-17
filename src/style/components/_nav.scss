@@ -1,8 +1,8 @@
 .nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  padding-top: rem(110);
+  // padding-top: rem(105);
   &_desktop {
     @media (max-width: 768px) {
       display: none;
@@ -28,10 +28,24 @@
 
 .nav__item {
   &:not(:last-child) {
-    margin-right: rem(162);
+    margin-right: rem(150);
+  }
+  &:nth-last-child(2) {
+    margin-right: rem(262);
   }
   &_relative {
     position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: rem(8);
+      right: rem(-22);
+      border: {
+        style: solid;
+        width: 9px 8px 0 8px;
+        color: #fff transparent transparent transparent;
+      }
+    }
   }
 }
 
@@ -44,7 +58,7 @@
     weight: 300;
   }
   transition: all 250ms;
-  padding-bottom: rem(11);
+  padding-bottom: rem(12);
   border-bottom: 4px solid transparent;
   &:hover, &:focus {
     color: $blue;
@@ -52,5 +66,8 @@
   &_active {
     color: $blue;
     border-bottom-color: $blue;
+  }
+  &_font-size-17 {
+    font-size: rem(17);
   }
 }

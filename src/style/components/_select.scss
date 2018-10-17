@@ -6,6 +6,7 @@
       border-radius: 0;
       padding: rem(0 30 10 8);
       background: transparent;
+      font-size: rem(12);
       .select2-selection__arrow  {
         top: -1px;
         height: 100%;
@@ -170,4 +171,8 @@
 
 .select-container_margin-left {
   margin-left: rem(18);
+}
+
+.select2-dropdown {
+  font-size: rem(12);
 }

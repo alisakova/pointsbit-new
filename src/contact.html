@@ -14,20 +14,24 @@
 </head>
 
 <body>
-	<div class="wrapper background-layout background-layout_with-back">
-		@import "contact/header.html"
+	<div class="wrapper">
+		@import "contact/big-header.html"
 		@import "contact/menu.html"
 		<main class="content">
-			<div class="background-layout__content">
-				<div class="contact-container">
-					@import "contact/contacts.html"
-					@import "contact/contact-form.html"
-				</div>
+			<div class="container contact-container">
+				@import "contact/contacts.html"
+				@import "contact/contact-form.html"
 			</div>
 		</main>
-		@import "contact/footer.html"
+		@import "footer-alt.html"
 	</div>
 	<script src="js/main.min.js"></script>
+	<script>
+	pixelperfect.init( {
+	image: "img/web.png",
+	opacity: .4
+} );
+	</script>
 </body>
 
 </html>
