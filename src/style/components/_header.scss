@@ -2,16 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(27 89 65 18);
-  height: rem(159);
-  @media (max-width: 768px) {
-    padding: {
-      right: rem(30);
-      bottom: rem(30);
-    }
-  }
+  padding-left: rem(18);
+  height: rem(77);
+  background: $dashboard-header-bg;
 }
 
 .header__logo {
-  max-width: rem(183);
+  display: block;
+  max-width: rem(174);
+  padding-top: rem(14);
+}
+
+.header__col {
+  height: 100%;
+  width: 33.333%;
+  &_medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -47,6 +47,11 @@
       }
     }
   }
+  &_dashboard {
+    &:not(:last-child) {
+      margin-right: rem(100);
+    }
+  }
 }
 
 .nav__link {
@@ -69,5 +74,13 @@
   }
   &_font-size-17 {
     font-size: rem(17);
+  }
+  &_dashboard {
+    color: #bdd6ff;
+    font: {
+      size: rem(13);
+      weight: 400;
+    }
+    padding-bottom: 0;
   }
 }

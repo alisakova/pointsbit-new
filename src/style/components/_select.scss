@@ -7,7 +7,7 @@
       padding: rem(0 30 10 8);
       background: transparent;
       font-size: rem(12);
-      .select2-selection__arrow  {
+      .select2-selection__arrow {
         top: -1px;
         height: 100%;
         b {
@@ -164,6 +164,32 @@
         .select2-selection__arrow
         b {
         border-color: transparent transparent #828a95 transparent;
+      }
+    }
+  }
+  &_statistics {
+    .select2-container--default {
+      .select2-selection--single {
+        border: none;
+        padding: 0;
+        font-size: rem(13);
+        .select2-selection__rendered {
+          color: #849fb4;
+        }
+        .select2-selection__arrow {
+          right: rem(12);
+          b {
+            border-width: rem(14) rem(9) 0 rem(9);
+            border-color: #849fb4 transparent transparent transparent;
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-width: 0 rem(9) rem(14) rem(9);
+        border-color: transparent transparent #849fb4 transparent;
       }
     }
   }

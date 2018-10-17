@@ -1,0 +1,35 @@
+.user-block {
+  background: linear-gradient(89deg, #6783ff 0%, #4bc2ff 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  max-width: rem(387);
+  padding: rem(18 20 20 47);
+  position: relative;
+  margin-left: auto;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: rem(31);
+    background: $dashboard-bg;
+  }
+}
+
+.user-block__mail {
+  font-size: rem(13);
+  margin-right: rem(32);
+}
+
+.user-block__date {
+  font-size: rem(10);
+}
+
+.user-block__time {
+  font-size: rem(16);
+}
