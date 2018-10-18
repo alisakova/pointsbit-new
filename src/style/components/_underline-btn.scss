@@ -1,0 +1,44 @@
+$border-colors: ();
+$border-width-values: ();
+
+$border-colors: (
+  green: #69c113,
+  red: #fc2837,
+  yellow: $yellow
+);
+
+$border-width-values: (
+  4: 4px,
+  6: 6px
+);
+
+@each $name, $color in $border-colors {
+  .underline-btn_#{$name}-border {
+    border-color: $color;
+  }
+}
+
+@each $name, $width in $border-width-values {
+  .underline-btn_border-width-#{$name} {
+    border: {
+      top-width: 0;
+      left-width: 0;
+      right-width: 0;
+      bottom-width: $width;
+    }
+  }
+}
+
+.underline-btn {
+  font-size: rem(12);
+  color: $white-with-blue;
+  padding-bottom: 3px;
+  border-style: solid;
+  text-align: center;
+  &_font-size-14 {
+    font-size: rem(14);
+  }
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}

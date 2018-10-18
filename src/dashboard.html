@@ -20,17 +20,36 @@
 	<main class="dashboard-wrapper">
 		@import "dashboard/statistics.html"
 		<section class="dashboard">
-			<div class="dashboard__block-container">
-				@import "dashboard/block-btc.html"
-				@import "dashboard/block-docs.html"
-			</div>
-			<div class="dashboard__block-container">
-				@import "dashboard/block-exchange.html"
-				@import "dashboard/block-balance.html"
+			<div class="container container_1192">
+				<div class="dashboard__container">
+					<div class="divider"></div>
+					<div class="dashboard__block-container">
+						@import "dashboard/block-diagram.html"
+						@import "dashboard/block-wallet.html"
+					</div>
+					<div class="dashboard__block-container">
+						@import "dashboard/block-exchange.html"
+						@import "dashboard/block-withdraw.html"
+					</div>
+					<div class="dashboard__block-container">
+						@import "dashboard/block-balance.html"
+						@import "dashboard/block-docs.html"
+					</div>
+					<button class="logout-btn">
+						<img src="img/logout-icon.svg" alt="Logout icon" class="logout-btn__icon">
+						Logout
+					</button>
+				</div>
 			</div>
 		</section>
 	</main>
 	<script src="js/main.min.js"></script>
+	<script>
+	pixelperfect.init( {
+	image: "img/web.png",
+	opacity: .4
+} );
+	</script>
 </body>
 
 </html>

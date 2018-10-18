@@ -51,19 +51,18 @@
     }
   }
   &_green-arrow {
-    width: rem(170);
+    width: rem(68);
     .select2-container {
-      min-width: rem(140);
+      min-width: rem(68);
     }
     .select2-container--default {
       .select2-selection--single {
         border: none;
-        padding-right: rem(48);
-        padding-left: 0;
+        padding: 0 0 rem(5) 0;
         .select2-selection__rendered {
           color: $green;
           font: {
-            size: rem(50);
+            size: rem(12);
             weight: 400;
           }
           padding: 0;
@@ -77,11 +76,8 @@
             left: 0;
             margin-left: 0;
             margin-top: 0;
-            border-width: rem(24) rem(18) 0 rem(18);
+            border-width: rem(7) rem(5) 0 rem(5);
             border-color: $green transparent transparent transparent;
-            @media (max-width: 475px) {
-              border-width: rem(20) rem(15) 0 rem(15);
-            }
           }
         }
       }
@@ -89,10 +85,16 @@
         .select2-selection--single
         .select2-selection__arrow
         b {
-        border-width: 0 rem(18) rem(24) rem(18);
+        border-width: 0 rem(5) rem(7) rem(5);
         border-color: transparent transparent $green transparent;
-        @media (max-width: 475px) {
-          border-width: 0 rem(15) rem(20) rem(15);
+      }
+    }
+    &_font-size-14 {
+      .select2-container--default {
+        .select2-selection--single {
+          .select2-selection__rendered {
+            font-size: rem(14);
+          }
         }
       }
     }
@@ -171,7 +173,7 @@
     .select2-container--default {
       .select2-selection--single {
         border: none;
-        padding: 0;
+        padding: rem(5 0);
         font-size: rem(13);
         .select2-selection__rendered {
           color: #849fb4;
@@ -179,7 +181,10 @@
         .select2-selection__arrow {
           right: rem(12);
           b {
-            border-width: rem(14) rem(9) 0 rem(9);
+            left: 2px;
+            top: 50%;
+            transform: none;
+            border-width: rem(12) rem(9) 0 rem(9);
             border-color: #849fb4 transparent transparent transparent;
           }
         }
@@ -188,7 +193,7 @@
         .select2-selection--single
         .select2-selection__arrow
         b {
-        border-width: 0 rem(9) rem(14) rem(9);
+        border-width: 0 rem(9) rem(12) rem(9);
         border-color: transparent transparent #849fb4 transparent;
       }
     }

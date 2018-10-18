@@ -7,11 +7,6 @@
   @media (max-width: 540px) {
     flex-direction: column;
   }
-  &_faq {
-    margin-bottom: rem(35);
-    padding: rem(0 52);
-    box-shadow: none;
-  }
 }
 
 .tabs__tab {
@@ -24,24 +19,9 @@
     size: rem(52);
     weight: 300;
   }
-  // line-height: 1.1;
   color: $simple-black;
   &_small-font-size {
     font-size: rem(36);
-  }
-  &_faq {
-    color: $gray;
-    padding: rem(28 0 53);
-    border-bottom: 2px solid $light-gray;
-    font: {
-      size: rem(24);
-      weight: 500;
-      family: $roboto;
-    }
-    &.active {
-      color: $black;
-      font-weight: 700;
-    }
   }
   &.active {
     &:after {
@@ -96,23 +76,6 @@
     p {
       font-size: rem(11);
       color: $simple-black;
-    }
-  }
-  &_faq {
-    margin-left: rem(28);
-    background: #fff;
-    padding: rem(22 32);
-    font-size: rem(20);
-    &_long-text {
-      font-size: rem(14);
-      color: $gray;
-      p {
-        font-size: rem(14);
-        color: $gray;
-      }
-    }
-    @media (max-width: 968px) {
-      margin-left: 0;
     }
   }
   @media (max-width: 760px) {

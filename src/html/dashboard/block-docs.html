@@ -1,52 +1,41 @@
-<div class="block">
-  <header class="block__header block__header_big-padding-right">
-    <h2 class="block__title">Documents</h2>
-    <div class="block__actions">
-      <label for="add-doc" class="block__add-btn">
-        <input id="add-doc" type="file" />
-        <span class="block__btn-icon">
-          <img src="img/add-icon.svg" alt="Add document">
-        </span>
-        Add
-      </label>
-    </div>
+<div class="block block_padding">
+  <header class="block__header">
+    <h2 class="block__title">Documents name</h2>
   </header>
-  <div class="block__body">
-    <div class="block__row document">
-      <div class="document__title">
-        Passport
-      </div>
-      <div class="document__progress progress">
-        <div class="progress__line">
-          <span class="progress__status-line done"></span>
-        </div>
-        <div class="progress__status">
-          Confirmed
-        </div>
-      </div>
-      <span class="document__button gradient-button">
-        <button class="gradient-button__inner">
-          Upload
-        </button>
-      </span>
-    </div>
-    <div class="block__row document">
-      <div class="document__title">
-        Bank documents
-      </div>
-      <div class="document__progress progress">
-        <div class="progress__line progress__line_waiting">
-          <span class="progress__status-line"></span>
-        </div>
-        <div class="progress__status">
-          Waiting
-        </div>
-      </div>
-      <span class="document__button gradient-button">
-        <button class="gradient-button__inner">
-          Upload
-        </button>
-      </span>
+  <div class="block__body block__body_padding-0">
+    <div class="table-container">
+      <table class="table">
+        <thead class="table__thead">
+          <tr>
+            <th class="table__th">Name</th>
+            <th class="table__th table__th_text-right">Status</th>
+            <th class="table__th">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody class="table__tbody">
+          <tr>
+            <td class="table__td table__td_small-padding">Passport</td>
+            <td class="table__td table__td_small-padding table__td_text-right">Confirmed</td>
+            <td class="table__td table__td_small-padding table__td_text-center">
+              <button class="underline-btn underline-btn_border-width-6 underline-btn_font-size-14 underline-btn_yellow-border">Upload</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__td table__td_small-padding">Bank documents</td>
+            <td class="table__td table__td_small-padding table__td_text-right">Confirmed</td>
+            <td class="table__td table__td_small-padding table__td_text-center">
+              <button class="underline-btn underline-btn_border-width-6 underline-btn_font-size-14 underline-btn_yellow-border">Upload</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__td table__td_small-padding">&nbsp;</td>
+            <td class="table__td table__td_small-padding table__td_text-right">&nbsp;</td>
+            <td class="table__td table__td_small-padding table__td_text-center">
+              <button class="underline-btn underline-btn_border-width-6 underline-btn_uppercase underline-btn_font-size-14 underline-btn_yellow-border">Add</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

@@ -1,23 +1,31 @@
 $statistics-values: ();
-$statistics-title-color: #849fb4;
 
 .statistics {
   background: $dashboard-blue;
-  padding: rem(10 103 16 0);
+  padding: rem(10 0 16 0);
+  margin-bottom: rem(85);
 }
 
 .statistics__container {
-  max-width: rem(1400);
-  padding: 0 rem(20);
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
+.statistics__block {
+  width: calc(100% / 6);
+  // &:not(:last-child) {
+  //   margin-right: 5%;
+  // }
+  // &:first-child {
+  //   margin-right: rem(66);
+  // }
+}
+
 .statistics__title {
-  color: $statistics-title-color;
+  color: $white-with-blue;
   font-size: rem(13);
+  margin-bottom: rem(2);
 }
 
 .statistics__value {

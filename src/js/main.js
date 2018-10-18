@@ -1,4 +1,3 @@
-
 var openLinks = document.querySelectorAll("._open-popup-block");
 var popupBlocks = document.querySelectorAll("._popup-block");
 var body = document.querySelector("body");

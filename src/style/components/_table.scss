@@ -1,8 +1,12 @@
+.table-container {
+  overflow-x: auto;
+}
+
 .table {
   width: 100%;
-  color: $block-color;
+  color: $white-with-blue;
   font: {
-    size: rem(20);
+    size: rem(12);
     weight: 400;
   }
   border-spacing: 0;
@@ -13,14 +17,32 @@
 }
 
 .table__th {
+  background: $dashboard-dark-blue;
   font-weight: 400;
-  border-bottom: 1px solid $border-color;
-  padding: rem(33 10 16);
+  padding: rem(13 18 18);
+  &_text-right {
+    text-align: right;
+  }
 }
 
 .table__td {
-  border-bottom: 1px solid $border-color;
-  padding: rem(33 10 16);
+  border-bottom: 1px solid rgba(65, 85, 142, 0.19);
+  padding: rem(18 15 11);
+  .underline-btn {
+    min-width: rem(60);
+  }
+  &_text-center {
+    text-align: center;
+  }
+  &_text-right {
+    text-align: right;
+  }
+  &_small-padding {
+    padding: {
+      top: rem(10);
+      bottom: rem(6);
+    }
+  }
 }
 
 .table__status {

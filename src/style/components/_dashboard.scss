@@ -2,8 +2,6 @@
   width: 100%;
   flex-grow: 1;
   background-color: $dashboard-bg;
-  padding: rem(30 30 30 28);
-  padding-left: rem(18);
   &.transactions {
     padding-left: rem(10);
     @media (max-width: 768px) {
@@ -18,10 +16,16 @@
   }
 }
 
+.dashboard__container {
+  padding-left: rem(94);
+  position: relative;
+}
+
 .dashboard__block-container {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  margin-right: rem(-16);
   @media (max-width: 1080px) {
     flex-wrap: wrap;
   }

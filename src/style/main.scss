@@ -67,6 +67,12 @@ button {
   &_big {
     max-width: rem(1370);
   }
+  &_1180 {
+    max-width: rem(1180);
+  }
+  &_1192 {
+    max-width: rem(1192);
+  }
 }
 
 .wrapper {
@@ -250,3 +256,8 @@ img {
 @import "components/up-button";
 @import "components/scroll-btn";
 @import "components/statistics";
+@import "components/divider";
+@import "components/status";
+@import "components/value";
+@import "components/underline-btn";
+@import "components/logout-btn";

@@ -1,0 +1,19 @@
+$values: ();
+
+$values: (
+  yellow: $yellow,
+  red: #ff404d
+);
+
+@each $name, $color in $values {
+  .value_#{$name} {
+    color: $color;
+  }
+}
+
+.value {
+  font-size: rem(12);
+  &_font-size-14 {
+    font-size: rem(14);
+  }
+}

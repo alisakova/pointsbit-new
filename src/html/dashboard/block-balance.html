@@ -1,21 +1,36 @@
-<div class="block block_small">
-  <header class="block__header">
+<div class="block block_padding">
+  <header class="block__header block__header_flex">
     <h2 class="block__title">Balance wallet</h2>
+    <div class="block__subtitle">All transactions</div>
   </header>
-  <div class="block__body block__body_wallet-balance">
-    <div class="wallet-balance">
-      <div class="wallet-balance__title">BTC wallet</div>
-      <div class="wallet-balance__amount">
-        0.16615 BTC
-      </div>
-      <a href="withdraw.html" class="wallet-balance__btn">Withdraw</a>
-    </div>
-    <div class="wallet-balance">
-      <div class="wallet-balance__title">ETH wallet</div>
-      <div class="wallet-balance__amount">
-        46.47095 ETH
-      </div>
-      <a href="withdraw.html" class="wallet-balance__btn">Withdraw</a>
+  <div class="block__body block__body_padding-0">
+    <div class="table-container">
+      <table class="table">
+        <thead class="table__thead">
+          <tr>
+            <th class="table__th">Currency</th>
+            <th class="table__th">Balance</th>
+            <th class="table__th">Rate</th>
+          </tr>
+        </thead>
+        <tbody class="table__tbody">
+          <tr>
+            <td class="table__td">ETH</td>
+            <td class="table__td">45.123555</td>
+            <td class="table__td">€&nbsp;&nbsp;1,345</td>
+          </tr>
+          <tr>
+            <td class="table__td">Bitcoin</td>
+            <td class="table__td">0.162535</td>
+            <td class="table__td">€&nbsp;&nbsp;1,768</td>
+          </tr>
+          <tr>
+            <td class="table__td">&nbsp;</td>
+            <td class="table__td">&nbsp;</td>
+            <td class="table__td">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
