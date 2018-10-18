@@ -35,6 +35,12 @@ $statistics-values: ();
   }
 }
 
+.transactions {
+  .statistics {
+    margin-bottom: rem(27);
+  }
+}
+
 $statistics-values: (
   rose: $rose,
   green: $dashboard-green,

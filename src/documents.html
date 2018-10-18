@@ -5,28 +5,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-  <title>PointsBit</title>
-	<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
+	<title>PointsBit</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 </head>
 
 <body>
-	<div class="background-layout">
+	<div class="dashboard-body">
 		@import "header.html"
 		@import "documents/menu.html"
 		<main class="dashboard-wrapper">
-			@import "documents/aside-nav.html"
+			@import "statistics.html"
 			<section class="dashboard">
-				@import "logout.html"
-				@import "documents/block.html"
+				<div class="container container_1192 dashboard__container">
+					<div class="dashboard__block-container">
+						@import "documents/block.html"
+					</div>
+				</div>
 			</section>
+			@import "logout.html"
 		</main>
 	</div>
 	<script src="js/main.min.js"></script>
 </body>
+
 </html>

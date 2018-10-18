@@ -4,9 +4,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  &:not(:last-child) {
-    margin-bottom: rem(18);
-  }
+  margin: rem(0 44 18 0);
   @media (max-width: 600px) {
     padding: {
       left: rem(15);
@@ -56,7 +54,7 @@
   font: {
     size: rem(15);
   }
-  color: #0f0a30;
+  color: #e4e1ff;
   margin: {
     top: rem(7);
     right: rem(30);

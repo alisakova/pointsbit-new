@@ -18,7 +18,7 @@
 	@import "header.html"
 	@import "dashboard/menu.html"
 	<main class="dashboard-wrapper">
-		@import "dashboard/statistics.html"
+		@import "statistics.html"
 		<section class="dashboard">
 			<div class="container container_1192">
 				<div class="dashboard__container">
@@ -28,20 +28,17 @@
 						@import "dashboard/block-wallet.html"
 					</div>
 					<div class="dashboard__block-container">
-						@import "dashboard/block-exchange.html"
-						@import "dashboard/block-withdraw.html"
+						@import "block-exchange.html"
+						@import "block-withdraw.html"
 					</div>
 					<div class="dashboard__block-container">
 						@import "dashboard/block-balance.html"
 						@import "dashboard/block-docs.html"
 					</div>
-					<button class="logout-btn">
-						<img src="img/logout-icon.svg" alt="Logout icon" class="logout-btn__icon">
-						Logout
-					</button>
 				</div>
 			</div>
 		</section>
+		@import "logout.html"
 	</main>
 	<script src="js/main.min.js"></script>
 	<script>

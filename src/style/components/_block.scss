@@ -17,6 +17,9 @@
   &_padding {
     padding: rem(5 5 32);
   }
+  &_max-width-none {
+    max-width: none;
+  }
   // &:first-child {
   //   @media (min-width: 1080px) {
   //     margin-right: rem(15);
@@ -63,6 +66,15 @@
     justify-content: space-between;
     align-items: center;
   }
+  &_transactions {
+    padding: rem(9 83 15 9);
+  }
+  &_alt-padding {
+    padding: rem(3 11 13);
+  }
+  &_margin-bottom {
+    margin-bottom: rem(6);
+  }
 }
 
 .block__title {
@@ -90,6 +102,9 @@
   font: {
     size: rem(16);
     weight: 400;
+  }
+  &_font-size-20 {
+    font-size: rem(20);
   }
 }
 
@@ -155,6 +170,9 @@
     weight: 700;
   }
   color: #c2d7e8;
+  &_font-size-26 {
+    font-size: rem(26);
+  }
 }
 
 .block__form {

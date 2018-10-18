@@ -1,7 +1,8 @@
 $status-values: ();
 
 $status-values: (
-  confirmed: $yellow
+  confirmed: $yellow,
+  not-confirmed: #ff3d3d
 );
 
 @each $name, $color in $status-values {

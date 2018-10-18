@@ -17,17 +17,19 @@
 }
 
 .table__th {
-  background: $dashboard-dark-blue;
   font-weight: 400;
   padding: rem(13 18 18);
   &_text-right {
     text-align: right;
   }
+  &_with-bg {
+    background: $dashboard-dark-blue;
+  }
 }
 
 .table__td {
   border-bottom: 1px solid rgba(65, 85, 142, 0.19);
-  padding: rem(18 15 11);
+  padding: rem(18 18 11);
   .underline-btn {
     min-width: rem(60);
   }
@@ -46,8 +48,5 @@
 }
 
 .table__status {
-  &_waiting {
-    padding-bottom: rem(3);
-    border-bottom: 4px solid $red;
-  }
+  border-bottom: 3px solid $red;
 }
