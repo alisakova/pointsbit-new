@@ -19,6 +19,9 @@
 .dashboard__container {
   padding-left: rem(94);
   position: relative;
+  &_bigger-padding {
+    padding-left: rem(150);
+  }
 }
 
 .dashboard__block-container {

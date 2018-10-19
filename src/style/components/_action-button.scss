@@ -18,4 +18,15 @@ $action-btn-bg: #283a52;
   &_font-size-15 {
     font-size: rem(15);
   }
+  &_exchange {
+    border-color: $popup-title-color;
+    background: #3279ec;
+    display: inline-block;
+    padding: {
+      top: rem(13);
+      left: rem(54);
+      right: rem(54);
+    }
+  }
 }
+ 

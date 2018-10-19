@@ -1,0 +1,19 @@
+.dashboard-nav {
+  font-size: rem(20);
+  display: flex;
+  align-items: center;
+  color: #fffeff;
+  padding: rem(17 33 16);
+}
+
+.dashboard-nav__link {
+  &:not(:last-child) {
+    margin-right: rem(132);
+  }
+  &:first-child {
+    margin-right: rem(260);
+  }
+  &_active {
+    color: #d5d0ff;
+  }
+}

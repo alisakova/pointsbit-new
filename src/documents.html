@@ -16,14 +16,17 @@
 
 <body>
 	<div class="dashboard-body">
-		@import "header.html"
+		@import "documents/header.html"
 		@import "documents/menu.html"
-		<main class="dashboard-wrapper">
+		<main class="dashboard-wrapper documents">
 			@import "statistics.html"
 			<section class="dashboard">
-				<div class="container container_1192 dashboard__container">
-					<div class="dashboard__block-container">
-						@import "documents/block.html"
+				<div class="container container_1300">
+					<div class="dashboard__container dashboard__container_bigger-padding">
+						@import "documents/dashboard-menu.html"
+						<div class="dashboard__block-container">
+							@import "documents/block.html"
+						</div>
 					</div>
 				</div>
 			</section>

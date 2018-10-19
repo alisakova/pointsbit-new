@@ -35,7 +35,8 @@ $statistics-values: ();
   }
 }
 
-.transactions {
+.transactions,
+.documents {
   .statistics {
     margin-bottom: rem(27);
   }

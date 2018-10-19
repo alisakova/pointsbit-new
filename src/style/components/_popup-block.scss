@@ -6,7 +6,7 @@
   width: rem(372);
   position: absolute;
   z-index: 100;
-  display: none;
+  display: block;
   &.active {
     display: block;
   }
@@ -16,6 +16,10 @@
       top: rem(34);
     }
   }
+  &.exchange-form {
+    width: rem(432);
+    padding-bottom: rem(51);
+  }
 }
 
 .popup-block__title {
@@ -23,11 +27,19 @@
     size: rem(27);
     weight: 300;
   }
-  color: #43425d;
+  color: $popup-title-color;
   margin-bottom: rem(46);
   text-align: center;
   letter-spacing: 5px;
   line-height: 1.2;
+  &_exchange {
+    font: {
+      size: rem(32);
+      weight: 700;
+      family: $roboto;
+    }
+    margin-bottom: rem(34);
+  }
 }
 
 .popup-block__button {

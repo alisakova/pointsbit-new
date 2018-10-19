@@ -20,12 +20,14 @@
 	<main class="dashboard-wrapper transactions">
 		@import "statistics.html"
 		<section class="dashboard">
-			<div class="container container_1192 dashboard__container">
-				<div class="dashboard__block-container">
-					@import "block-exchange.html"
-					@import "block-withdraw.html"
+			<div class="container container_1192">
+				<div class="dashboard__container">
+					<div class="dashboard__block-container">
+						@import "block-exchange.html"
+						@import "block-withdraw.html"
+					</div>
+					@import "transactions/block.html"
 				</div>
-				@import "transactions/block.html"
 			</div>
 		</section>
 		@import "logout.html"

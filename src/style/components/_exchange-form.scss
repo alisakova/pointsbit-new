@@ -1,8 +1,14 @@
 .exchange-form {
-  width: 100%;
-  padding-left: rem(33);
-  @media (max-width: 1080px) {
-    padding-left: 0;
+  bottom: 0;
+  left: 100%;
+  .form__input,
+  .form__content {
+    font-family: $roboto;
+  }
+  .form__item {
+    &:not(.form__item_margin-bottom-104) {
+      margin-bottom: rem(37);
+    }
   }
 }
 
@@ -10,4 +16,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.exchange-form__subtitle {
+  font: {
+    size: rem(17);
+    family: $roboto;
+  }
+  color: $popup-title-color;
+  margin-bottom: rem(40);
+  text-align: left;
 }

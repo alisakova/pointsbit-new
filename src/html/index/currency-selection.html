@@ -74,6 +74,49 @@
         </div>
       </div>
     </div>
-    <a href="" class="typical-block__button exchange-button">Exchange</a>
+    <div class="typical-block__popup-link _popup-block-container">
+      <button class="typical-block__button exchange-button _open-popup-block">
+        Exchange
+      </button>
+      <div class="popup-block exchange-form _popup-block">
+        <div class="popup-block__title popup-block__title_exchange">
+          Exchange
+        </div>
+        <form action="" class="form">
+          <div class="form__item">
+            <input type="email" placeholder="E-mail" class="form__input">
+          </div>
+          <div class="exchange-form__subtitle">
+            Currency select
+          </div>
+          <div class="form__item select-container select-container_exchange-form-arrow">
+            <select class="form__select select" name="state">
+              <option value="btc" selected>
+                Bitcoin
+              </option>
+              <option value="eth">
+                ETH
+              </option>
+            </select>
+          </div>
+          <div class="form__item form__item_with-content">
+            <span class="form__content">Amount in €</span>
+            <input type="text" class="form__input form__input_alt" placeholder="" />
+          </div>
+          <div class="form__item form__item_with-content form__item_margin-bottom-104">
+            <span class="form__content">You`ll get:</span>
+            <input type="text" disabled class="form__input form__input_alt" placeholder="" />
+          </div>
+          <div class="form__accept form__accept_margin-bottom">
+            <label for="accept-1" class="form__label form__label_font-size-12 checkbox">
+              I accept Terms&Conditions and Privacy Policy
+              <input id="accept-1" type="checkbox">
+              <span class="checkbox__checkmark"></span>
+            </label>
+          </div>
+          <a href="#" class="action-button action-button_font-size-15 action-button_exchange">Open Wallet</a>
+        </form>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
 .user-docs {
   border: 1px solid #707070;
-  padding: rem(17 72 27 41);
+  padding: rem(15 72 25 41);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,33 +21,6 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  &:first-child {
-    max-width: 43%;
-    @media (max-width: 990px) {
-      max-width: 60%;
-    }
-    @media (max-width: 540px) {
-      max-width: 50%;
-    }
-  }
-  &:last-child {
-    max-width: 36.2%;
-    justify-content: space-between;
-    @media (max-width: 600px) {
-      justify-content: flex-start;
-    }
-  }
-  @media (max-width: 540px) {
-    &:last-child,
-    &:first-child {
-      width: 100%;
-      max-width: none;
-      justify-content: flex-start;
-    }
-    &:first-child {
-      margin-bottom: rem(15);
-    }
-  }
 }
 
 .user-docs__user {
@@ -86,6 +59,18 @@
 
 .user-docs__section {
   width: 100%;
+  &_flex {
+    display: flex;
+    align-items: center;
+  }
+  &_flex-basis {
+    flex-basis: 60%;
+  }
+}
+
+.user-docs__col {
+  width: 55%;
+  margin-right: rem(70);
 }
 
 .user-docs__doc-name {
@@ -95,6 +80,11 @@
     min-width: rem(117);
     margin-right: rem(20);
   }
+}
+
+.user-docs__user-status {
+  color: #e4e1ff;
+  font-size: rem(11);
 }
 
 .user-docs__button {

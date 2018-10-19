@@ -37,6 +37,9 @@ select, input {
       margin-bottom: rem(30);
     }
   }
+  &_margin-bottom-104 {
+    margin-bottom: rem(104);
+  }
   &_flex {
     display: flex;
     justify-content: space-between;
@@ -77,7 +80,7 @@ select, input {
   border-bottom: 2px solid $light-gray;
   @extend %default-text;
   @include input-placeholder {
-    color: #43425d;
+    color: $popup-title-color;
   }
   &_alt {
     border-bottom: none;
@@ -107,6 +110,9 @@ select, input {
   &_font-size-10 {
     font-size: rem(10);
   }
+  &_font-size-12 {
+    font-size: rem(12);
+  }
 }
 
 .form__checkbox {
@@ -115,18 +121,9 @@ select, input {
 }
 
 .form__accept {
-  &_margin-right {
-    margin-right: rem(-79);
-    @media (max-width: 1080px) {
-      margin-right: 0;
-    }
-  }
-  &_flex-end {
-    @media (min-width: 1900px) {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: rem(-82);
-    }
+  text-align: left;
+  &_margin-bottom {
+    margin-bottom: rem(32);
   }
 }
 
