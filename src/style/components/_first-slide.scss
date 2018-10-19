@@ -12,6 +12,12 @@
     display: block;
     margin-top: rem(40);
     font-size: rem(101);
+    @media (max-width: 700px) {
+      font-size: rem(50);
+    }
+  }
+  @media (max-width: 700px) {
+    max-width: 33rem;
   }
 }
 
@@ -19,4 +25,16 @@
   position: absolute;
   right: rem(-41);
   bottom: rem(100);
+  width: rem(41);
+  height: rem(67);
+  @media (max-width: 800px) {
+    right: rem(10);
+  }
+  @media (max-width: 700px) {
+    bottom: rem(45);
+    right: rem(20);
+  }
+  @media (max-width: 375px) {
+    display: none;
+  }
 }

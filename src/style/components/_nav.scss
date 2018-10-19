@@ -3,6 +3,9 @@
   justify-content: flex-end;
   align-items: center;
   // padding-top: rem(105);
+  @media (max-width: 992px) {
+    justify-content: space-between;
+  }
   &_desktop {
     @media (max-width: 768px) {
       display: none;
@@ -32,9 +35,18 @@
 .nav__item {
   &:not(:last-child) {
     margin-right: rem(150);
+    @media (max-width: 992px) {
+      margin-right: rem(35);
+    }
   }
   &:nth-last-child(2) {
     margin-right: rem(262);
+    @media (max-width: 1400px) {
+      margin-right: rem(220);
+    }
+    @media (max-width: 992px) {
+      margin-right: rem(35);
+    }
   }
   &_relative {
     position: relative;
@@ -48,6 +60,9 @@
         width: 9px 8px 0 8px;
         color: #fff transparent transparent transparent;
       }
+    }
+    @media (max-width: 1400px) {
+      margin-right: rem(20);
     }
   }
   &_dashboard {

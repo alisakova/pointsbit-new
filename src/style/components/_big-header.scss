@@ -7,6 +7,9 @@
     padding-bottom: rem(135);
     margin-bottom: rem(10);
   }
+  @media (max-width: 768px) {
+    margin-bottom: rem(100);
+  }
 }
 
 .big-header__logo {
@@ -14,7 +17,14 @@
   height: rem(110);
   margin-left: rem(44);
   display: inline-block;
+  @media (max-width: 1280px) {
+    margin-bottom: rem(35);
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
   @media (max-width: 540px) {
+    height: auto;
     max-width: rem(220);
   }
 }
@@ -22,5 +32,16 @@
 .big-header__row {
   &:nth-child(2) {
     margin-top: rem(-8);
+    @media (max-width: 1280px) {
+      margin-top: 0;
+    }
+  }
+  &_flex {
+    @media (max-width: 768px) {
+      padding-right: rem(44);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

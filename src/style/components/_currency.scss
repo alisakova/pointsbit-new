@@ -5,9 +5,9 @@
   font-weight: 700;
   flex: 0 0 31%;
   text-align: left;
-  &:not(:last-child) {
-    margin-right: rem(77);
-  }
+  // &:not(:last-child) {
+  //   margin-right: rem(77);
+  // }
 }
 
 .currency__img {
