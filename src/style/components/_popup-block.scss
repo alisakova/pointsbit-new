@@ -20,6 +20,13 @@
     width: rem(432);
     padding-bottom: rem(51);
   }
+  &_alt {
+    background: $dashboard-blue;
+    box-shadow: 0 3px 6px rgba(238, 219, 219, 0.68);
+    border-radius: 8px;
+    border: none;
+    padding: rem(11 24 15);
+  }
 }
 
 .popup-block__title {
@@ -48,6 +55,14 @@
       weight: 400;
     }
   }
+  &_withdraw-form {
+    color: $white-with-blue;
+    font: {
+      size: rem(17);
+      weight: 400;
+    }
+    letter-spacing: 0;
+  }
 }
 
 .popup-block__button {
@@ -56,4 +71,17 @@
   &_margin-bottom {
     margin-bottom: rem(25);
   }
+  &_margin-bottom-16 {
+    margin-bottom: rem(16);
+  }
+}
+
+.popup-block__close {
+  width: rem(15);
+  height: rem(16);
+  background: url('../img/close-green.png') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: rem(7);
+  right: rem(12);
 }

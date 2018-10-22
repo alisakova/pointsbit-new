@@ -12,6 +12,39 @@
       </select>
     </div>
     <div class="value value_red value_font-size-14">0.162535</div>
-    <button class="underline-btn underline-btn_font-size-14 underline-btn_red-border underline-btn_border-width-6">Withdraw</button>
+    <div class="block__popup-container _popup-block-container">
+      <button class="underline-btn underline-btn_font-size-14 underline-btn_red-border underline-btn_border-width-6 _open-popup-block">Withdraw</button>
+      <div class="popup-block popup-block_alt withdraw-form _popup-block">
+        <button class="popup-block__close _close-popup-block">
+        </button>
+        <div class="popup-block__title popup-block__title_withdraw-form">
+          Withdraw
+        </div>
+        <form action="">
+          <div class="withdraw-form__item exchange exchange_margin-left-right-0">
+            <div class="select-container select-container_green-arrow select-container_green-arrow_big-font-size">
+              <select class="form__select select" name="state">
+                <option value="btc" selected>
+                  BTC
+                </option>
+                <option value="eth">
+                  ETH
+                </option>
+              </select>
+            </div>
+            <div class="form__item form__item_width-50 form__item_margin-bottom-0">
+              <input type="text" id="balance" value="0.16615" disabled class="exchange__input">
+            </div>
+          </div>
+          <div class="form__item form__item_flex form__item_with-content">
+            <span class="form__content form__content_font-size-19">To</span>
+            <input type="text" value="100" disabled class="form__input form__input_alt" placeholder="" />
+          </div>
+          <div class="popup-block__button">
+            <button class="underline-btn underline-btn_font-size-19 underline-btn_red-border underline-btn_border-width-9 underline-btn_min-width">Withdraw</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

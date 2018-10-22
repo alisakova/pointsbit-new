@@ -1,30 +1,14 @@
 .credit-card-form {
   bottom: -21.5rem;
   right: 100%;
-  background: $dashboard-blue;
-  box-shadow: 0 3px 6px rgba(238, 219, 219, 0.68);
-  border-radius: 8px;
-  border: none;
-  padding: rem(11 24 15);
-  width: rem(410);
   min-height: rem(827);
   margin-bottom: rem(25);
+  width: rem(441);
   .form__item {
     &:not(.form__item_margin-bottom-0) {
       margin-bottom: rem(30);
     }
   }
-}
-
-.credit-card-form__label {
-  font-size: rem(20);
-  color: $white-with-blue;
-}
-
-.credit-card-form__input {
-  font-size: rem(26);
-  color: #c2d7e8;
-  width: 100%;
 }
 
 .credit-card-form__card {
@@ -53,14 +37,4 @@
 .credit-card-form__btn {
   text-align: center;
   margin-bottom: rem(16);
-}
-
-.credit-card-form__close {
-  width: rem(15);
-  height: rem(16);
-  background: url('../img/close-green.png') no-repeat center center;
-  background-size: cover;
-  position: absolute;
-  top: rem(7);
-  right: rem(12);
 }

@@ -5,4 +5,21 @@
   margin: 0 rem(24) rem(27);
   padding-bottom: rem(12);
   border-bottom: 3px solid rgba(190, 190, 190, 0.2);
+  &_margin-left-right-0 {
+    margin: {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.exchange__input {
+  font-size: rem(26);
+  color: #c2d7e8;
+  width: 100%;
+}
+
+.exchange__label {
+  font-size: rem(20);
+  color: $white-with-blue;
 }

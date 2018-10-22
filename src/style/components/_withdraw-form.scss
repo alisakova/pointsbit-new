@@ -1,0 +1,14 @@
+.withdraw-form {
+  width: rem(440);
+  padding: rem(15 62 18);
+  bottom: rem(-20);
+  right: rem(-90);
+  .form__item {
+    &:not(.form__item_margin-bottom-0) {
+      margin-bottom: rem(20);
+    }
+  }
+  .exchange {
+    margin-bottom: rem(10);
+  }
+}
