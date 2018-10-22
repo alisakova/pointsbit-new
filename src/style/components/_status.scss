@@ -29,4 +29,11 @@ $status-values: (
     width: 15px;
     style: solid;
   }
+  @media (max-width: 1200px) {
+    width: rem(160);
+    height: rem(160);
+  }
+  @media (max-width: 680px) {
+    border-width: 10px;
+  }
 }

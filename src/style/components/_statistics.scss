@@ -4,22 +4,28 @@ $statistics-values: ();
   background: $dashboard-blue;
   padding: rem(10 0 16 0);
   margin-bottom: rem(85);
+  @media (max-width: 680px) {
+    margin-bottom: rem(30);
+  }
 }
 
 .statistics__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 540px) {
+    flex-wrap: wrap;
+    margin-bottom: rem(-25);
+    justify-content: space-between;
+  }
 }
 
 .statistics__block {
   width: calc(100% / 6);
-  // &:not(:last-child) {
-  //   margin-right: 5%;
-  // }
-  // &:first-child {
-  //   margin-right: rem(66);
-  // }
+  @media (max-width: 540px) {
+    width: 33.333%;
+    margin-bottom: rem(25);
+  }
 }
 
 .statistics__title {

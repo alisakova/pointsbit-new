@@ -19,6 +19,12 @@
     width: rem(31);
     background: $dashboard-bg;
   }
+  @media (max-width: 475px) {
+    max-width: none;
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .user-block__mail {

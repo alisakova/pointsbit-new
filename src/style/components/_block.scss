@@ -10,8 +10,21 @@
   &_medium {
     max-width: none;
     flex: 0 0 56.612%;
+    @media (max-width: 968px) {
+      max-width: 50%;
+      flex: auto;
+    }
+    @media (max-width: 668px) {
+      max-width: none;
+    }
     & + .block {
       max-width: none;
+      @media (max-width: 968px) {
+        max-width: 50%;
+      }
+      @media (max-width: 668px) {
+        max-width: none;
+      }
     }
   }
   &_padding {
@@ -20,42 +33,9 @@
   &_max-width-none {
     max-width: none;
   }
-  // &:first-child {
-  //   @media (min-width: 1080px) {
-  //     margin-right: rem(15);
-  //   }
-  // }
-  // &:last-child {
-  //   @media (min-width: 1080px) {
-  //     margin-left: rem(15);
-  //   }
-  // }
-  // @media (max-width: 1080px) {
-  //   width: 100%;
-  // }
-  // &_big {
-  //   flex-grow: 1;
-  // }
-  // &_small {
-  //   max-width: rem(364);
-  //   @media (max-width: 1080px) {
-  //     max-width: none;
-  //   }
-  //   .block__header {
-  //     @media (min-width: 1501px) and (max-width: 1700px) {
-  //       padding-right: rem(10);
-  //     }
-  //   }
-  // }
-  // &_box-shadow {
-  //   height: 100%;
-  //   box-shadow: 0 3px 6px rgba(13, 13, 13, 0.12);
-  // }
-  // &_alt {
-  //   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  //   max-width: rem(1120);
-  //   border-radius: 7px;
-  // }
+  @media (max-width: 668px) {
+    max-width: none;
+  }
 }
 
 .block__header {
@@ -68,6 +48,9 @@
   }
   &_transactions {
     padding: rem(9 83 15 9);
+    @media (max-width: 680px) {
+      padding-right: rem(9);
+    }
   }
   &_alt-padding {
     padding: rem(3 11 13);
@@ -135,6 +118,7 @@
 
 .block__body {
   padding: rem(19 12 25 34);
+  height: 100%;
   &_flex {
     display: flex;
     justify-content: flex-start;
@@ -142,6 +126,9 @@
     &_center-space-between {
       align-items: center;
       justify-content: space-between;
+    }
+    @media (max-width: 1080px) {
+      padding-left: rem(12);
     }
   }
   &_padding-0 {
@@ -162,6 +149,11 @@
   &_text-center {
     text-align: center;
   }
+  &_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .block__status {
@@ -171,6 +163,9 @@
   }
   color: #c2d7e8;
   &_font-size-26 {
+    font-size: rem(26);
+  }
+  @media (max-width: 680px) {
     font-size: rem(26);
   }
 }
@@ -191,4 +186,8 @@
   @media (max-width: 375px) {
     margin-left: 0;
   }
+}
+
+.block__table {
+  overflow-x: auto;
 }

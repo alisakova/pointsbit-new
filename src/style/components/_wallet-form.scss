@@ -23,6 +23,9 @@
   align-items: center;
   color: $link-blue;
   padding-right: rem(21);
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
 }
 
 .wallet-form__link {

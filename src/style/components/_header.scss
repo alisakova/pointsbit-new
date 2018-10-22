@@ -5,20 +5,48 @@
   padding-left: rem(18);
   height: rem(77);
   background: $dashboard-header-bg;
+  @media (max-width: 475px) {
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: 0;
+  }
 }
 
 .header__logo {
   display: block;
   max-width: rem(174);
   padding-top: rem(14);
+  @media (max-width: 475px) {
+    padding: {
+      left: rem(18);
+      bottom: rem(18);
+    }
+  }
 }
 
 .header__col {
   height: 100%;
   width: 33.333%;
+  @media (max-width: 768px) {
+    width: auto;
+  }
   &_medium {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: rem(15);
+    @media (max-width: 768px) {
+      order: 3;
+      justify-content: flex-end;
+    }
+    @media (max-width: 475px) {
+      order: 2;
+    }
+  }
+  &_right {
+    @media (max-width: 475px) {
+      order: 3;
+      width: 100%;
+    }
   }
 }

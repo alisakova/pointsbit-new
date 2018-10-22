@@ -1,8 +1,6 @@
 .burger {
   width: rem(40);
   height: rem(40);
-  background: url('../img/burger.svg') no-repeat;
-  background-size: cover;
   display: none;
   @media (max-width: 768px) {
     display: block;
