@@ -1,7 +1,6 @@
 $indicator-bg: #c2d7e8;
 $indicator-active-bg: #69c113;
 $data-color: #6a829a;
-$data-active-color: #0f9af8;
 
 .data {
   &:not(:last-child) {
@@ -22,18 +21,17 @@ $data-active-color: #0f9af8;
 }
 
 .data__indicator {
-  width: rem(60);
+  width: rem(61);
   height: rem(12);
   background-color: $indicator-bg;
   opacity: 0.66;
   border-radius: 3px;
-  margin-bottom: rem(6);
+  margin: 0 auto rem(6);
   transition: all 250ms;
   &_active {
     background-color: $indicator-active-bg;
     height: rem(18);
-    width: rem(65);
-    margin-left: rem(-6);
+    width: rem(68);
   }
 }
 
@@ -47,6 +45,6 @@ $data-active-color: #0f9af8;
   transition: all 250ms;
   &_active {
     font-size: rem(18);
-    color: $data-active-color;
+    color: #fff;;
   }
 }

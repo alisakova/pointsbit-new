@@ -1,9 +1,9 @@
 .card-form {
-  background: $dashboard-blue;
+  background: $credit-card-bg;
   box-shadow: 0 12px 19px rgba(28, 127, 255, 0.34);
   border-radius: 9px;
   width: rem(326);
-  height: rem(198);
+  height: rem(196);
   padding: rem(24 24 27 42);
   @media (max-width: 768px) {
     height: rem(230);
@@ -15,12 +15,13 @@
   &_front {
     position: relative;
     z-index: 2;
+    left: rem(-10);
   }
   &_back {
     position: absolute;
     z-index: 1;
-    top: rem(57);
-    left: rem(70);
+    top: rem(24);
+    left: rem(50);
     display: flex;
     justify-content: flex-end;
     padding: {
@@ -34,6 +35,10 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: rem(49);
+  img {
+    max-width: 100%;
+    width: auto;
+  }
 }
 
 .card-form__inputs {

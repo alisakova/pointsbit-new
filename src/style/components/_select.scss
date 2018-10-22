@@ -109,6 +109,57 @@
         }
       }
     }
+    &_big-font-size {
+      width: rem(100);
+      .select2-container {
+        min-width: rem(90);
+      }
+      .select2-container--default {
+        .select2-selection--single {
+          .select2-selection__rendered {
+            font-size: rem(26);
+          }
+          .select2-selection__arrow {
+            b {
+              border-width: rem(11) rem(10) 0 rem(10);
+            }
+          }
+        }
+        &.select2-container--open
+          .select2-selection--single
+          .select2-selection__arrow
+          b {
+          border-width: 0 rem(10) rem(11) rem(10);
+        }
+      }
+    }
+    &_credit-card-form {
+      width: 100%;
+      .select2-container {
+        min-width: 100%;
+      }
+      .select2-container--default {
+        .select2-selection--single {
+          .select2-selection__rendered {
+            color: $light-gray;
+          }
+          .select2-selection__arrow {
+            right: rem(30);
+            b {
+              border-color: $green transparent transparent transparent;
+              border-width: rem(10) rem(10) 0 rem(10);
+            }
+          }
+        }
+        &.select2-container--open
+          .select2-selection--single
+          .select2-selection__arrow
+          b {
+          border-color: transparent transparent $green transparent;
+          border-width: 0 rem(10) rem(10) rem(10);
+        }
+      }
+    }
   }
 
   &_gray-arrow {

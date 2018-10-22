@@ -12,6 +12,119 @@
       </select>
     </div>
     <div class="value value_yellow">€ 12,4587</div>
-    <button class="underline-btn underline-btn_green-border underline-btn_border-width-4">Exchange</button>
+    <div class="block__popup-container _popup-block-container">
+      <button class="underline-btn underline-btn_green-border underline-btn_border-width-4 _open-popup-block">Exchange</button>
+      <div class="popup-block credit-card-form _popup-block">
+        <button class="credit-card-form__close _close-popup-block">
+        </button>
+        <div class="popup-block__title popup-block__title_credit-card-form">
+          Exchange
+        </div>
+        <form action="">
+          <div class="credit-card-form__item exchange">
+            <div class="select-container select-container_green-arrow select-container_green-arrow_big-font-size">
+              <select class="form__select select" name="state">
+                <option value="btc" selected>
+                  BTC
+                </option>
+                <option value="eth">
+                  ETH
+                </option>
+              </select>
+            </div>
+            <div class="form__item form__item_width-50 form__item_margin-bottom-0">
+              <label for="balance" class="credit-card-form__label">
+                Balance wallet
+              </label>
+              <input type="text" id="balance" value="0.16615" disabled class="credit-card-form__input">
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="select-container select-container_green-arrow_credit-card-form">
+              <select class="form__select select" name="state">
+                <option value="btc" selected>
+                  BTC
+                </option>
+                <option value="eth">
+                  ETH
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form__item form__item_with-content">
+            <span class="form__content form__content_font-size-13">Amount in €</span>
+            <input type="text" class="form__input form__input_font-size-13 form__input_alt" placeholder="" />
+          </div>
+          <div class="form__item form__item_with-content">
+            <span class="form__content form__content_font-size-13">You`ll get:</span>
+            <input type="text" disabled class="form__input form__input_font-size-13 form__input_alt" placeholder="" />
+          </div>
+          <div class="credit-card-form__card">
+            <div class="card-form card-form_front">
+              <div class="card-form__logo">
+                <img src="img/visa-logo.svg" alt="Visa logo">
+              </div>
+              <form class="card-form__form">
+                <div class="card-form__inputs">
+                  <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+                  <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+                  <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+                  <input type="text" required maxlength="4" class="card-form__input">
+                </div>
+                <div class="card-form__block">
+                  <div class="card-form__item card-form__item_max-width">
+                    <input type="text" required placeholder="Name Name" class="card-form__input-name"/>
+                  </div>
+                  <div class="card-form__item card-form__item_flex">
+                    <div class="card-form__label">
+                      valid<br />
+                      thru
+                    </div>
+                    <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
+                    <span class="card-form__divider">/</span>
+                    <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-form card-form_back">
+              <div class="card-form__item">
+                <div class="card-form__cvv">
+                  cvv
+                </div>
+                <input type="text" required placeholder="" maxlength="3" class="card-form__input card-form__input_cvv"/>
+              </div>
+            </div>
+          </div>
+          <div class="credit-card-form__datas">
+            <div class="data">
+              <div class="data__indicator"></div>
+              <button class="data__name _address-btn">Address</button>
+            </div>
+            <div class="data">
+              <div class="data__indicator data__indicator_active"></div>
+              <button class="data__name data__name_active _card-btn">Credit card</button>
+            </div>
+            <div class="data">
+              <div class="data__indicator"></div>
+              <button class="data__name _data-btn">Personal data</button>
+            </div>
+          </div>
+          <div class="credit-card-form__status">
+            Status: waiting for payment
+          </div>
+          <div class="credit-card-form__btn">
+            <button class="underline-btn underline-btn_font-size-19 underline-btn_red-border underline-btn_border-width-9 underline-btn_min-width">Buy</button>
+          </div>
+          <div class="form__accept form__accept_center">
+            <label for="accept-1" class="form__label checkbox checkbox_small">
+              I accept Terms&Conditions and Privacy Policy
+              <input id="accept-1" type="checkbox">
+              <span class="checkbox__checkmark checkbox__checkmark_small"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

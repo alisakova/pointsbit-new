@@ -1,5 +1,6 @@
 var openLinks = document.querySelectorAll("._open-popup-block");
 var popupBlocks = document.querySelectorAll("._popup-block");
+var closePopup = document.querySelectorAll("._close-popup-block");
 var body = document.querySelector("body");
 
 if (openLinks && popupBlocks) {
@@ -23,6 +24,15 @@ if (openLinks && popupBlocks) {
     });
     item.addEventListener("touchstart", function(e) {
       e.stopPropagation();
+    });
+  });
+
+  closePopup.forEach(function(item) {
+    item.addEventListener("click", function(e) {
+      e.stopPropagation();
+      var parent = e.target.closest("._popup-block-container");
+      var popupBlock = parent.querySelector("._popup-block");
+      popupBlock.classList.remove("active");
     });
   });
 }

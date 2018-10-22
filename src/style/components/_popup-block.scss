@@ -40,6 +40,14 @@
     }
     margin-bottom: rem(34);
   }
+  &_credit-card-form {
+    color: #fff;
+    letter-spacing: 0;
+    font: {
+      size: rem(20);
+      weight: 400;
+    }
+  }
 }
 
 .popup-block__button {

@@ -13,9 +13,10 @@ $checkbox-border: #808495;
     }
   }
   &_small {
+    font-size: 9px;
     padding: {
       left: rem(28);
-      top: 1px;
+      top: 2px;
     }
   }
   &_medium {

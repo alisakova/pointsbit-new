@@ -40,6 +40,9 @@ select, input {
   &_margin-bottom-104 {
     margin-bottom: rem(104);
   }
+  &_margin-bottom-0 {
+    margin-bottom: 0;
+  }
   &_flex {
     display: flex;
     justify-content: space-between;
@@ -47,6 +50,9 @@ select, input {
     .form__input {
       max-width: rem(200);
     }
+  }
+  &_width-50 {
+    flex-basis: 50%;
   }
   &_alt {
     border-top: 3px solid $border-color;
@@ -67,8 +73,9 @@ select, input {
   line-height: 1.2;
   white-space: nowrap;
   @extend %default-text;
-  &_font-size-19 {
-    font-size: rem(19);
+  &_font-size-13 {
+    color: $light-gray;
+    font-size: rem(13);
     padding-bottom: rem(13);
     line-height: 1.3;
   }
@@ -86,8 +93,8 @@ select, input {
     border-bottom: none;
     flex-basis: 100%;
   }
-  &_font-size-19 {
-    font-size: rem(19);
+  &_font-size-13 {
+    font-size: rem(13);
     padding-bottom: rem(13);
     padding-top: 0;
     line-height: 1.3;
@@ -124,6 +131,10 @@ select, input {
   text-align: left;
   &_margin-bottom {
     margin-bottom: rem(32);
+  }
+  &_center {
+    display: flex;
+    justify-content: center;
   }
 }
 

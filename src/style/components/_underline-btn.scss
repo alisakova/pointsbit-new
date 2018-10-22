@@ -9,7 +9,8 @@ $border-colors: (
 
 $border-width-values: (
   4: 4px,
-  6: 6px
+  6: 6px,
+  9: 9px
 );
 
 @each $name, $color in $border-colors {
@@ -37,6 +38,13 @@ $border-width-values: (
   text-align: center;
   &_font-size-14 {
     font-size: rem(14);
+  }
+  &_font-size-19 {
+    font-size: rem(19);
+  }
+  &_min-width {
+    min-width: rem(95);
+    margin: 0 auto;
   }
   &_uppercase {
     text-transform: uppercase;
