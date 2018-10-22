@@ -4,6 +4,9 @@
   &_small-padding-bottom {
     padding-bottom: rem(38);
   }
+  @media (max-width: 540px) {
+    padding-bottom: rem(45);
+  }
 }
 
 .typical-block__container {
@@ -24,6 +27,10 @@
   &_big-margin-bottom {
     margin-bottom: rem(142);
   }
+  @media (max-width: 540px) {
+    text-align: left;
+    margin-bottom: rem(55);
+  }
 }
 
 .typical-block__img {
@@ -39,7 +46,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: rem(70);
+  // margin-bottom: rem(70);
+  flex-flow: row wrap;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .typical-block__popup-link {
