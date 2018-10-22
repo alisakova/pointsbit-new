@@ -1,3 +1,9 @@
+.tabs {
+  @media (max-width: 540px) {
+    margin-bottom: rem(30);
+  }
+}
+
 .tabs__container {
   width: 100%;
   background: #fff;
@@ -46,6 +52,7 @@
     padding: {
       left: rem(15);
       right: rem(15);
+      bottom: rem(20);
     }
     &:last-child {
       border-bottom-color: transparent;
@@ -85,6 +92,7 @@
     padding: {
       left: rem(15);
       right: rem(15);
+      top: rem(30);
     }
   }
 }
