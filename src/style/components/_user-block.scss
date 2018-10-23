@@ -21,6 +21,7 @@
   }
   @media (max-width: 475px) {
     max-width: none;
+    padding-left: rem(20);
     &:after {
       display: none;
     }
