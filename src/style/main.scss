@@ -206,11 +206,17 @@ img {
 // 	}
 // }
 //
-// @media (min-width: 2000px) {
-// 	html {
-// 		font-size: 24px;
-// 	}
-// }
+@media (min-width: 2000px) {
+	html {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 3180px) {
+	html {
+		font-size: 30px;
+	}
+}
 
 @import "components/first-slide";
 @import "components/button";

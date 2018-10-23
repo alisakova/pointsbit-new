@@ -1,6 +1,9 @@
 .first-slide {
   padding-bottom: rem(410);
   position: relative;
+  @media (min-width: 1960px) {
+    padding-bottom: rem(500);
+  }
 }
 
 .first-slide__title {
