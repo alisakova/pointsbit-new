@@ -8,4 +8,14 @@
     weight: 700;
   }
   color: #fff;
+  &_desktop {
+    @media (max-width: 540px) {
+      display: none;
+    }
+  }
+  &_mobile {
+    @media (min-width: 541px) {
+      display: none;
+    }
+  }
 }

@@ -6,15 +6,35 @@
     <button class="burger _open-menu">
       <?xml version="1.0" encoding="UTF-8"?>
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 26" version="1.1" fill="#ffffff" width="26px" height="26px">
-      <g id="surface1" fill="#ffffff">
-      <path style=" " d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z " fill="#ffffff"/>
-      </g>
+        <g id="surface1" fill="#ffffff">
+          <path style=" " d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z " fill="#ffffff" />
+        </g>
       </svg>
     </button>
   </div>
   <div class="big-header__row">
     <div class="container container_big">
       <nav class="nav nav_desktop">
+        <div class="popup-block open-wallet _open-wallet">
+          <div class="popup-block__title">
+            Open Wallet
+          </div>
+          <form action="" class="form">
+            <div class="form__item">
+              <input type="mail" placeholder="Email" class="form__input">
+            </div>
+            <div class="popup-block__button popup-block__button_margin-bottom">
+              <button class="action-button">Open Wallet</button>
+            </div>
+            <div class="form__accept">
+              <label for="accept-5" class="form__label checkbox">
+                I accept Terms&Conditions and Privacy Policy
+                <input id="accept-5" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
         <div class="nav__item">
           <a href="index.html" class="nav__link nav__link_active">Home</a>
         </div>
@@ -27,58 +47,38 @@
         <div class="nav__item">
           <a href="contact.html" class="nav__link">Contact us</a>
         </div>
-        <div class="nav__item nav__item_relative _popup-block-container">
-          <button class="nav__link nav__link_font-size-17 _open-popup-block">Wallet</button>
-          <div class="popup-block wallet-form _popup-block">
-            <div class="popup-block__title">
-              Wallet
-            </div>
-            <form action="" class="form">
-              <div class="form__item">
-                <input type="email" placeholder="E-mail" class="form__input">
+        <div class="nav__item nav__item_relative">
+          <div class="_popup-block-container">
+            <button class="nav__link nav__link_font-size-17 _open-popup-block">Wallet</button>
+            <div class="popup-block wallet-form _popup-block">
+              <div class="popup-block__title">
+                Wallet
               </div>
-              <div class="form__item">
-                <input type="password" placeholder="Password" class="form__input">
-              </div>
-              <div class="wallet-form__actions">
-                <div class="form__accept">
-                  <label for="remember" class="form__label form__label_font-size-10 checkbox checkbox_small">
-                    Remember me
-                    <input id="remember" type="checkbox">
-                    <span class="checkbox__checkmark checkbox__checkmark_small"></span>
-                  </label>
+              <form action="" class="form">
+                <div class="form__item">
+                  <input type="email" placeholder="E-mail" class="form__input">
                 </div>
-                <a href="#" class="wallet-form__link">Forgot password</a>
-              </div>
-              <div class="popup-block__button popup-block__button_margin-bottom">
-                <a href="dashboard.html" class="action-button">
-                  Login
-                </a>
-              </div>
-              <div class="_popup-block-container">
-                <a href="#" class="wallet-form__link wallet-form__link_font-size-14 _open-popup-block">Open Wallet</a>
-                <div class="popup-block open-wallet _popup-block">
-                  <div class="popup-block__title">
-                    Open Wallet
+                <div class="form__item">
+                  <input type="password" placeholder="Password" class="form__input">
+                </div>
+                <div class="wallet-form__actions">
+                  <div class="form__accept">
+                    <label for="remember" class="form__label form__label_font-size-10 checkbox checkbox_small">
+                      Remember me
+                      <input id="remember" type="checkbox">
+                      <span class="checkbox__checkmark checkbox__checkmark_small"></span>
+                    </label>
                   </div>
-                  <form action="" class="form">
-                    <div class="form__item">
-                      <input type="mail" placeholder="Email" class="form__input">
-                    </div>
-                    <div class="popup-block__button popup-block__button_margin-bottom">
-                      <button class="action-button">Open Wallet</button>
-                    </div>
-                    <div class="form__accept">
-                      <label for="accept-5" class="form__label checkbox">
-                        I accept Terms&Conditions and Privacy Policy
-                        <input id="accept-5" type="checkbox">
-                        <span class="checkbox__checkmark"></span>
-                      </label>
-                    </div>
-                  </form>
+                  <a href="#" class="wallet-form__link">Forgot password</a>
                 </div>
-              </div>
-            </form>
+                <div class="popup-block__button popup-block__button_margin-bottom">
+                  <a href="dashboard.html" class="action-button">
+                    Login
+                  </a>
+                </div>
+                <a href="#" class="wallet-form__link wallet-form__link_font-size-14 _open-wallet-btn">Open Wallet</a>
+              </form>
+            </div>
           </div>
         </div>
       </nav>

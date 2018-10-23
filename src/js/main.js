@@ -1,4 +1,6 @@
 var openLinks = document.querySelectorAll("._open-popup-block");
+var openWalletBtn = document.querySelector("._open-wallet-btn");
+var openWalletBlock = document.querySelector("._open-wallet");
 var popupBlocks = document.querySelectorAll("._popup-block");
 var closePopup = document.querySelectorAll("._close-popup-block");
 var body = document.querySelector("body");
@@ -37,6 +39,13 @@ if (openLinks && popupBlocks) {
   });
 }
 
+if (openWalletBtn && openWalletBlock) {
+  openWalletBtn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    openWalletBlock.classList.add("active");
+  });
+};
+
 body.addEventListener("click", function(e) {
   e.stopPropagation();
   popupBlocks.forEach(function(item) {
@@ -44,6 +53,9 @@ body.addEventListener("click", function(e) {
       item.classList.remove("active");
     }
   });
+  if (openWalletBlock.classList.contains("active")) {
+    openWalletBlock.classList.remove("active");
+  }
 });
 
 body.addEventListener("touchstart", function(e) {
@@ -54,20 +66,6 @@ body.addEventListener("touchstart", function(e) {
     }
   });
 });
-
-var accordion = document.querySelectorAll(".accordion");
-
-for (var i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
 
 var actionsBtn = document.querySelectorAll(".block__action-btn");
 
@@ -96,11 +94,6 @@ dataBtns.forEach(function(btn) {
         elemName.classList.remove("data__name_active");
       }
     });
-    forms.forEach(function(elem) {
-      if (elem.classList.contains("active")) {
-        elem.classList.remove("active");
-      }
-    });
     dataIndicators.forEach(function(elem) {
       if (elem.classList.contains("data__indicator_active")) {
         elem.classList.remove("data__indicator_active");
@@ -111,12 +104,6 @@ dataBtns.forEach(function(btn) {
     var elemName = btn.querySelector('.data__name');
     elemName.classList.add("data__name_active");
     indicator.classList.add("data__indicator_active");
-    if (elemName.classList.contains("_card-btn")) {
-      cardForm.classList.add('active');
-    }
-    if (elemName.classList.contains("_address-btn")) {
-      addressForm.classList.add('active');
-    }
   });
 });
 

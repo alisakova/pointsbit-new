@@ -10,6 +10,12 @@
       margin-bottom: rem(37);
     }
   }
+  @media (max-width: 900px) {
+    left: 0;
+  }
+  @media (max-width: 600px) {
+    left: rem(-30);
+  }
 }
 
 .exchange-form__actions {

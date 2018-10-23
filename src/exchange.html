@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body>
+	<header class="mobile-header mobile-header_with-back-btn">
+		<button class="back" onclick="window.history.back()">
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20"><defs><style>.cls-1{fill:#686868;}</style></defs><title>Untitled-3</title><path class="cls-1" d="M13.9,20a.74.74,0,0,1-.45-.15L.65,10.58A.77.77,0,0,1,.33,10a.79.79,0,0,1,.32-.63L13.45.15a.78.78,0,0,1,1.07.18.76.76,0,0,1-.17,1.07L2.42,10l11.93,8.66A.77.77,0,0,1,13.9,20Z"/></svg>
+		</button>
+	</header>
+	<main class="mobile-wrapper">
+		<div class="wallet-form wallet-form-mobile">
+	    <div class="wallet-form-mobile__title">
+	      Exchange
+	    </div>
+			<form action="" class="form">
+				<div class="form__item">
+					<input type="email" placeholder="E-mail" class="form__input">
+				</div>
+				<div class="exchange-form__subtitle">
+					Currency select
+				</div>
+				<div class="form__item select-container select-container_exchange-form-arrow">
+					<select class="form__select select" name="state">
+						<option value="btc" selected>
+							Bitcoin
+						</option>
+						<option value="eth">
+							ETH
+						</option>
+					</select>
+				</div>
+				<div class="form__item form__item_with-content">
+					<span class="form__content">Amount in €</span>
+					<input type="text" class="form__input form__input_alt" placeholder="" />
+				</div>
+				<div class="form__item form__item_with-content form__item_margin-bottom-104">
+					<span class="form__content">You`ll get:</span>
+					<input type="text" disabled class="form__input form__input_alt" placeholder="" />
+				</div>
+				<div class="form__accept form__accept_margin-bottom">
+					<label for="accept-1" class="form__label form__label_font-size-12 checkbox">
+						I accept Terms&Conditions and Privacy Policy
+						<input id="accept-1" type="checkbox">
+						<span class="checkbox__checkmark"></span>
+					</label>
+				</div>
+				<a href="#" class="action-button action-button_font-size-15 action-button_exchange">Open Wallet</a>
+			</form>
+	  </div>
+	</main>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

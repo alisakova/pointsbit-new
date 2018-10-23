@@ -20,4 +20,7 @@
 .wallet-form-mobile__button {
   display: flex;
   justify-content: center;
+  &_margin-bottom {
+    margin-bottom: rem(25);
+  }
 }

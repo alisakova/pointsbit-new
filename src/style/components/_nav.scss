@@ -3,6 +3,7 @@
   justify-content: flex-end;
   align-items: center;
   // padding-top: rem(105);
+  position: relative;
   @media (max-width: 992px) {
     justify-content: space-between;
   }

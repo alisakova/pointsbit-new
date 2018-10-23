@@ -2,7 +2,6 @@
 @import "mixin";
 @import "util";
 @import "fonts";
-@import "pixel-perfect.css";
 
 html {
   height: 100%;
@@ -125,6 +124,9 @@ button {
   display: flex;
   justify-content: flex-end;
   padding: rem(50 30);
+  &_with-back-btn {
+    justify-content: flex-start;
+  }
 }
 
 .background-blue {
@@ -258,3 +260,4 @@ img {
 @import "components/exchange";
 @import "components/back";
 @import "components/withdraw-form";
+@import "components/open-wallet";

@@ -1,0 +1,9 @@
+.open-wallet {
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(23);
+  @media (max-width: 1220px) {
+    transform: none;
+    left: rem(50);
+  }
+}
