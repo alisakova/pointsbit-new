@@ -10,7 +10,10 @@
     padding: rem(15 10 18 15);
   }
   @media (max-width: 768px) {
-    width: 21.375rem;
+    width: 21rem;
+  }
+  @media (max-width: 475px) {
+    width: 19rem;
   }
   &_front {
     position: relative;
@@ -27,6 +30,9 @@
     padding: {
       top: rem(70);
       right: rem(18);
+    }
+    @media (max-width: 768px) {
+      left: rem(60);
     }
   }
 }

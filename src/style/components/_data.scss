@@ -47,4 +47,7 @@ $data-color: #6a829a;
     font-size: rem(18);
     color: #fff;;
   }
+  @media (max-width: 475px) {
+    font-size: 10px;
+  }
 }

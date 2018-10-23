@@ -107,6 +107,12 @@ button {
 .mobile-wrapper {
   margin-top: 1rem;
   padding-bottom: 2rem;
+  &_padding {
+    padding: {
+      left: rem(20);
+      right: rem(20);
+    }
+  }
 }
 
 .content {
@@ -119,11 +125,6 @@ button {
   display: flex;
   justify-content: flex-end;
   padding: rem(50 30);
-  svg {
-    g, path {
-      fill: $gray-300;
-    }
-  }
 }
 
 .background-blue {
@@ -255,4 +256,5 @@ img {
 @import "components/underline-btn";
 @import "components/logout-btn";
 @import "components/exchange";
+@import "components/back";
 @import "components/withdraw-form";

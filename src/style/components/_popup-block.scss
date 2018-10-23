@@ -27,6 +27,14 @@
     border: none;
     padding: rem(11 24 15);
   }
+  &_mobile {
+    box-shadow: none;
+    width: 100%;
+    position: static;
+    display: block;
+    border-radius: 8px;
+    background: $dashboard-blue;
+  }
 }
 
 .popup-block__title {

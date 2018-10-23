@@ -49,4 +49,14 @@ $border-width-values: (
   &_uppercase {
     text-transform: uppercase;
   }
+  &_desktop {
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+  &_mobile {
+    @media (min-width: 681px) {
+      display: none;
+    }
+  }
 }

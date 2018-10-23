@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>PointsBit</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body class="dashboard-body">
+	<main class="mobile-wrapper mobile-wrapper_padding">
+		<button class="back" onclick="window.history.back()">
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20"><defs><style>.cls-1{fill:#ffffff;}</style></defs><title>Untitled-3</title><path class="cls-1" d="M13.9,20a.74.74,0,0,1-.45-.15L.65,10.58A.77.77,0,0,1,.33,10a.79.79,0,0,1,.32-.63L13.45.15a.78.78,0,0,1,1.07.18.76.76,0,0,1-.17,1.07L2.42,10l11.93,8.66A.77.77,0,0,1,13.9,20Z"/></svg>
+		</button>
+		<div class="credit-card-form credit-card-form_mobile popup-block popup-block_mobile">
+			<div class="popup-block__title popup-block__title_credit-card-form">
+				Exchange
+			</div>
+			<form action="">
+				<div class="credit-card-form__item exchange">
+					<div class="select-container select-container_green-arrow select-container_green-arrow_big-font-size">
+						<select class="form__select select" name="state">
+							<option value="btc" selected>
+								BTC
+							</option>
+							<option value="eth">
+								ETH
+							</option>
+						</select>
+					</div>
+					<div class="form__item form__item_width-50 form__item_margin-bottom-0">
+						<label for="balance" class="exchange__label">
+							Balance wallet
+						</label>
+						<input type="text" id="balance" value="0.16615" disabled class="exchange__input">
+					</div>
+				</div>
+				<div class="form__item">
+					<div class="select-container select-container_green-arrow_credit-card-form">
+						<select class="form__select select" name="state">
+							<option value="btc" selected>
+								BTC
+							</option>
+							<option value="eth">
+								ETH
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="form__item form__item_with-content">
+					<span class="form__content form__content_font-size-13">Amount in €</span>
+					<input type="text" class="form__input form__input_font-size-13 form__input_alt" placeholder="" />
+				</div>
+				<div class="form__item form__item_with-content">
+					<span class="form__content form__content_font-size-13">You`ll get:</span>
+					<input type="text" disabled class="form__input form__input_font-size-13 form__input_alt" placeholder="" />
+				</div>
+				<div class="credit-card-form__card">
+					<div class="card-form card-form_front">
+						<div class="card-form__logo">
+							<img src="img/visa-logo.svg" alt="Visa logo">
+						</div>
+						<form class="card-form__form">
+							<div class="card-form__inputs">
+								<input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+								<input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+								<input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+								<input type="text" required maxlength="4" class="card-form__input">
+							</div>
+							<div class="card-form__block">
+								<div class="card-form__item card-form__item_max-width">
+									<input type="text" required placeholder="Name Name" class="card-form__input-name" />
+								</div>
+								<div class="card-form__item card-form__item_flex">
+									<div class="card-form__label">
+										valid<br />
+										thru
+									</div>
+									<input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small" />
+									<span class="card-form__divider">/</span>
+									<input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small" />
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="card-form card-form_back">
+						<div class="card-form__item">
+							<div class="card-form__cvv">
+								cvv
+							</div>
+							<input type="text" required placeholder="" maxlength="3" class="card-form__input card-form__input_cvv" />
+						</div>
+					</div>
+				</div>
+				<div class="credit-card-form__datas">
+					<div class="data">
+						<div class="data__indicator"></div>
+						<button class="data__name _address-btn">Address</button>
+					</div>
+					<div class="data">
+						<div class="data__indicator data__indicator_active"></div>
+						<button class="data__name data__name_active _card-btn">Credit card</button>
+					</div>
+					<div class="data">
+						<div class="data__indicator"></div>
+						<button class="data__name _data-btn">Personal data</button>
+					</div>
+				</div>
+				<div class="credit-card-form__status">
+					Status: waiting for payment
+				</div>
+				<div class="popup-block__button popup-block__button_margin-bottom-16">
+					<button class="underline-btn underline-btn_font-size-19 underline-btn_red-border underline-btn_border-width-9 underline-btn_min-width">Buy</button>
+				</div>
+				<div class="form__accept form__accept_center">
+					<label for="accept-1" class="form__label checkbox checkbox_small">
+						I accept Terms&Conditions and Privacy Policy
+						<input id="accept-1" type="checkbox">
+						<span class="checkbox__checkmark checkbox__checkmark_small"></span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</main>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

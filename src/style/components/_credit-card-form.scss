@@ -1,5 +1,4 @@
 .credit-card-form {
-  bottom: -21.5rem;
   right: 100%;
   min-height: rem(827);
   margin: rem(25 0);
@@ -8,6 +7,27 @@
     &:not(.form__item_margin-bottom-0) {
       margin-bottom: rem(30);
     }
+  }
+  &_dashboard {
+    top: rem(-520);
+    @media (max-width: 960px) {
+      left: 100%;
+      right: auto;
+      top: rem(-490);
+    }
+  }
+  &_alt {
+    top: rem(-200);
+    bottom: auto;
+    @media (max-width: 960px) {
+      left: 100%;
+      right: auto;
+    }
+  }
+  &_mobile {
+    width: 100%;
+    min-height: 0;
+    border: none;
   }
 }
 
