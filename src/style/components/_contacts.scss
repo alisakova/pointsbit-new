@@ -3,7 +3,10 @@ $contacts-title: #283c55;
 .contacts {
   margin-right: rem(25);
   @media (max-width: 998px) {
-    margin-right: 0;
+    margin: {
+      right: 0;
+      bottom: rem(25);
+    }
     padding-left: 0;
   }
 }
