@@ -11,4 +11,11 @@
   .exchange {
     margin-bottom: rem(10);
   }
+  @media (max-width: 1300px) {
+    right: 0;
+  }
+  @media (max-width: 475px) {
+    width: rem(375);
+    right: rem(-30);
+  }
 }
